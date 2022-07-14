@@ -1,2 +1,14 @@
-.env.development
-/log
+.DS_Store
+__pycache__
+.env
+.env.*
+!.env.example
+log/
+~$*
+.python-version
+venv/
+
+htdocs/static/*
+!htdocs/static/.keep
+
+tmp/*

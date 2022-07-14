@@ -12,7 +12,7 @@ services:
     ports:
       - "10001:80"
     volumes:
-      - ./htdocs/:usr/share/nginx/html
+      - ./htdocs/:/usr/share/nginx/html
     networks:
       - fastapi_network
     environment:
@@ -39,7 +39,7 @@ services:
       - ./htdocs:/usr/src/app/htdocs:cached
       - ./log/app:/var/log/app:cached
     working_dir: /usr/src/app/scripts
-    command: bach -c "./init_db.sh && ./run_server.sh"
+    command: bash -c "./init_db.sh && ./run_server.sh"
     networks:
       - fastapi_network
     environment:
@@ -59,7 +59,7 @@ services:
       - "11445:3306"
     volumes:
       - ./docker/db/initdb.d:/docker-entrypoint-initdb.d:cached
-      - ./docker/db/conf.d"/etc/mysql/conf.d:cached
+      - ./docker/db/conf.d:/etc/mysql/conf.d:cached
       - ./log/db:/var/log/mysql:cached
     networks:
     - fastapi_network
