@@ -1,6 +1,7 @@
-from fastapi import FastAPI, APIRouter
-from typing import List
 import env
+from starlette.middleware.base import BaseHTTPMiddleware
+from middlewares import http_log
+from fastapi import FastAPI, APIRouter
 
 router = APIRouter()
 
@@ -15,5 +16,7 @@ else:
 
 app.include_router(
     router,
-    prefix='v1',
+    prefix='/v1',
 )
+
+app.add_middleware(BaseHTTPMiddleware, dispatch=http_log)
