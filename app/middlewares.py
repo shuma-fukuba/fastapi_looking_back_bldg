@@ -28,5 +28,5 @@ async def http_log(request: Request, call_next):
             header_val = response.headers[header_name]
             message += f'   [headers]{header_name}={header_val}\n'
         logger.debug(message)
-    logger.info('END - statusCode is $d', response.status_code)
+    logger.info('END - statusCode is %d', response.status_code)
     return response
