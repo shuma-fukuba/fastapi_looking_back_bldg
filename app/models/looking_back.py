@@ -27,8 +27,7 @@ class LookingBack(Base, TimestampMixin):
     # looking_back belong to users many-to-one
     user = relationship("User", back_populates='looking_backs')
     user_id = Column(
-        UUIDType(
-            binary=False),
+        UUIDType(binary=False),
         ForeignKey('users.uuid'),
         nullable=False)
 

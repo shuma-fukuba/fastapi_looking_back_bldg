@@ -1,6 +1,6 @@
 import uuid as uid
 from database import Base
-from sqlalchemy import Column, Integer, ForeignKey
+from sqlalchemy import Column, Integer
 from sqlalchemy_utils import UUIDType
 from sqlalchemy.orm import relationship
 
@@ -20,6 +20,4 @@ class Week(Base, TimestampMixin):
     """
     # week hasMany looking_backes one-to-many
     looking_backs = relationship('LookingBack', back_populates='week')
-    week_id = Column(UUIDType(binary=False),
-                     ForeignKey('weeks.uuid'),
-                     nullable=False)
+    learning_times = relationship("LearningTime", back_populates='week')
