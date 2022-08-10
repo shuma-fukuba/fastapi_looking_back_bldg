@@ -1,116 +1,110 @@
-# import os
-# # import sys
-# from logging.config import fileConfig
-# from sqlalchemy import engine_from_config
-# from sqlalchemy import pool
-# import sqlalchemy
-# import sqlalchemy_utils
-# from alembic import context
-# import models  # /usr/src/app/models with PYTHONPATH=/usr/src/app
+from logging.config import fileConfig
 
-# # this is the Alembic Config object, which provides
-# # access to the values within the .ini file in use.
-# config = context.config
+from sqlalchemy import engine_from_config
+from sqlalchemy import pool
 
-# DB_USER = os.environ.get('MYSQL_USER')
-# DB_PASSWORD = os.environ.get('MYSQL_PASSWORD')
-# DB_ROOT_PASSWORD = os.environ.get('MYSQL_ROOT_PASSWORD')
-# DB_HOST = os.environ.get('MYSQL_HOST')
-# DB_NAME = os.environ.get('MYSQL_DATABASE')
+import os
+import sqlalchemy_utils
+import models  # /usr/src/app/models with PYTHONPATH=/usr/src/app
 
-# DATABASE = 'mysql://%s:%s@%s/%s?charset=utf8' % (
-#     DB_USER,
-#     DB_PASSWORD,
-#     DB_HOST,
-#     DB_NAME,
-# )
+from alembic import context
 
-# config.set_main_option('sqlalchemy.url', DATABASE)
+# this is the Alembic Config object, which provides
+# access to the values within the .ini file in use.
+config = context.config
 
-# # Interpret the config file for Python logging.
-# # This line sets up loggers basically.
-# fileConfig(config.config_file_name)
+# DB接続用設定追加
+DB_USER = os.environ.get('MYSQL_USER')
+DB_PASSWORD = os.environ.get('MYSQL_PASSWORD')
+DB_ROOT_PASSWORD = os.environ.get('MYSQL_ROOT_PASSWORD')
+DB_HOST = os.environ.get('MYSQL_HOST')
+DB_NAME = os.environ.get('MYSQL_DATABASE')
 
-# # add your model's MetaData object here
-# # for 'autogenerate' support
+DATABASE = 'mysql://%s:%s@%s/%s?charset=utf8' % (
+    DB_USER,
+    DB_PASSWORD,
+    DB_HOST,
+    DB_NAME,
+)
+config.set_main_option('sqlalchemy.url', DATABASE)
 
-# target_metadata = models.Base.metadata
+# Interpret the config file for Python logging.
+# This line sets up loggers basically.
+fileConfig(config.config_file_name)
 
-# # other values from the config, defined by the needs of env.py,
-# # can be acquired:
-# # my_important_option = config.get_main_option("my_important_option")
-# # ... etc.
+# add your model's MetaData object here
+# for 'autogenerate' support
+# from myapp import mymodel
+# target_metadata = mymodel.Base.metadata
+target_metadata = models.Base.metadata
 
+# other values from the config, defined by the needs of env.py,
+# can be acquired:
+# my_important_option = config.get_main_option("my_important_option")
+# ... etc.
 
-# # https://github.com/kvesteri/sqlalchemy-utils/issues/129
-# def render_item(type_, obj, autogen_context):
-#     """Apply custom rendering for selected items."""
-
-#     if type_ == 'type':
-#         if isinstance(obj, sqlalchemy_utils.types.uuid.UUIDType):
-#             # add import for this type
-#             autogen_context.imports.add("import sqlalchemy_utils")
-#             autogen_context.imports.add("import uuid")
-#             return "sqlalchemy_utils.types.uuid.UUIDType(binary=False), default=uuid.uuid4"
-
-#         elif isinstance(obj, sqlalchemy.dialects.mysql.SET):
-#             autogen_context.imports.add(
-#                 "from sqlalchemy.dialects import mysql")
-#             return f"mysql.{obj}"
-
-#     # default rendering for other objects
-#     return False
+# UUIDのマイグレーション対応用関数実装
 
 
-# def run_migrations_offline():
-#     """Run migrations in 'offline' mode.
+def render_item(type_, obj, autogen_contect):
+    """Apply ccustom rendering for selected items."""
 
-#     This configures the context with just a URL
-#     and not an Engine, though an Engine is acceptable
-#     here as well.  By skipping the Engine creation
-#     we don't even need a DBAPI to be available.
-
-#     Calls to context.execute() here emit the given string to the
-#     script output.
-
-#     """
-#     url = config.get_main_option("sqlalchemy.url")
-#     context.configure(
-#         url=url,
-#         target_metadata=target_metadata,
-#         literal_binds=True,
-#         dialect_opts={"paramstyle": "named"},
-#     )
-
-#     with context.begin_transaction():
-#         context.run_migrations()
+    if type_ == 'type' and isinstance(
+            obj, sqlalchemy_utils.types.uuid.UUIDType):
+        autogen_contect.imports.add("import sqlalchemy_utils")
+        autogen_contect.imports.add("import uuid")
+        return "sqlalchemy_utils.types.uuid.UUIDType(binary=False), default=uuid.uuid4"
+    return False
 
 
-# def run_migrations_online():
-#     """Run migrations in 'online' mode.
+def run_migrations_offline():
+    """Run migrations in 'offline' mode.
 
-#     In this scenario we need to create an Engine
-#     and associate a connection with the context.
+    This configures the context with just a URL
+    and not an Engine, though an Engine is acceptable
+    here as well.  By skipping the Engine creation
+    we don't even need a DBAPI to be available.
 
-#     """
-#     connectable = engine_from_config(
-#         config.get_section(config.config_ini_section),
-#         prefix="sqlalchemy.",
-#         poolclass=pool.NullPool,
-#     )
+    Calls to context.execute() here emit the given string to the
+    script output.
 
-#     with connectable.connect() as connection:
-#         context.configure(
-#             connection=connection,
-#             target_metadata=target_metadata,
-#             render_item=render_item
-#         )
+    """
+    url = config.get_main_option("sqlalchemy.url")
+    context.configure(
+        url=url,
+        target_metadata=target_metadata,
+        literal_binds=True,
+        dialect_opts={"paramstyle": "named"},
+    )
 
-#         with context.begin_transaction():
-#             context.run_migrations()
+    with context.begin_transaction():
+        context.run_migrations()
 
 
-# if context.is_offline_mode():
-#     run_migrations_offline()
-# else:
-#     run_migrations_online()
+def run_migrations_online():
+    """Run migrations in 'online' mode.
+
+    In this scenario we need to create an Engine
+    and associate a connection with the context.
+
+    """
+    connectable = engine_from_config(
+        config.get_section(config.config_ini_section),
+        prefix="sqlalchemy.",
+        poolclass=pool.NullPool,
+    )
+
+    with connectable.connect() as connection:
+        context.configure(
+            connection=connection, target_metadata=target_metadata,
+            render_item=render_item
+        )
+
+        with context.begin_transaction():
+            context.run_migrations()
+
+
+if context.is_offline_mode():
+    run_migrations_offline()
+else:
+    run_migrations_online()

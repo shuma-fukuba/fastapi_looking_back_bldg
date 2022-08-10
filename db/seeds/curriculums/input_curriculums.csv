@@ -1,0 +1,335 @@
+curriculum,week
+"■HTML・CSSデザインコースをはじめる方へ
+N予備校：02.Webサイトとブラウザの基礎知識",1
+N予備校：03.HTMLとCSSを使ってみよう,1
+N予備校：04.Webサイトのレイアウトについて知ろう,1
+N予備校：05.HTMLとCSSでレイアウトを組んでみよう,1
+N予備校：06.HTMLについて詳しく学ぼう,1
+N予備校：07.CSSで装飾しよう,1
+"■ N予備校 Webデザイン HTML・CSSデザインコース
+【HTMLとCSSの応用学習】
+N予備校：01.ボタンをつくってみよう",2
+N予備校：02.CSSを使った自由な表現,2
+N予備校：03.お問い合わせフォームを作ってみよう,2
+N予備校：04.お問い合わせフォームを装飾しよう,2
+"■ CSS入門講座
+↓",2
+https://www.youtube.com/watch?v=UKN8IH6LBwA&list=PLDkIaO69NH-vdoaI4vD2hW3b6uKZduD5a,2
+N予備校：08.JavaScriptで論理を扱う,2
+"■検証ツールの使い方
+↓",2
+https://prog-8.com/docs/html-dev,2
+"■ N予備校 プログラミング入門コース
+【第1章 はじめよう】
+19.GitHubでWebサイト公開
+【GitHub に「あなたのいいところ診断」を置いてみよう。】となっていますが、作っていないため、Webデザインコースで作ったデータをアップロードしてみましょう。
+",3
+"
+■ N予備校 プログラミング入門コース
+【第2章 準備しよう】
+
+13.Git と GitHub の連携",3
+14.GitHub への push,3
+15.Git のブランチ,3
+"■ 動画教材
+Git + GitHubの使い方入門講座（基本操作のおさらい）
+↓",4
+https://www.youtube.com/watch?v=LDOR5HfI_sQ,4
+"GitHubの使い方についての動画（Git flow）
+↓",4
+https://www.youtube.com/watch?v=0ge7ZJQvYLw,4
+https://drive.google.com/file/d/1r5YA9OeRqgnbGJqEkst7jX7xXUCwWWZn/view?usp=sharing,4
+https://drive.google.com/file/d/17Drk5WZgKOGQ4RKsWnqnjOsYi7hfQzn5/view?usp=sharing,4
+N予備校：08.JavaScriptで論理を扱う,4
+"■ ページのディレクトリ参考
+ディレクトリ構成・ファイル名
+↓",4
+https://jam25.jp/html/html-css-03/#outline__5_2,4
+"■ N予備校 Webデザインコース
+【JavaScriptの基礎を学ぶ】
+01.はじめてのJavaScript
+↓",5
+https://www.nnn.ed.nico/courses/488/chapters/6638,5
+"■ ドットインストール 【詳解JavaScript 基礎文法編】
+↓",5
+https://dotinstall.com/lessons/basic_javascript_grammer_v2,5
+"■ドットインストール
+【詳解JavaScript オブジェクト編】
+↓",6
+https://dotinstall.com/lessons/basic_javascript_objects_v2,6
+"【詳解JavaScript DOM編】
+↓",6
+https://dotinstall.com/lessons/basic_javascript_dom_v2,6
+"■ N予備校 プログラミング入門コース
+【第1章 はじめよう】
+06.はじめてのJavaScript",7
+07.JavaScriptでの計算,7
+08.JavaScriptで論理を扱う,7
+09.JavaScriptのループ,7
+10.JavaScriptのコレクション,7
+11.JavaScriptの関数,7
+N予備校：08.JavaScriptで論理を扱う,7
+"■ N予備校 プログラミング入門コース 【第1章 はじめよう】
+16.診断機能の開発",7
+17.診断機能の組み込み,7
+18.ツイート機能の開発,7
+"■ 動画教材　レスポンシブWebデザインの基礎
+【メディアクエリについて】
+↓",9
+https://www.youtube.com/watch?v=xdUjlpHRX0U,9
+"【レスポンシブWebデザインの基礎】
+↓",9
+https://www.youtube.com/watch?v=79Dr3RGm0SI,9
+"■ N予備校 Webデザインコース
+【JavaScriptの基礎を学ぶ】
+02.jQueryを使ってみよう?@",11
+03.jQueryを使ってみよう?A,11
+"04.jQueryプラグインを使ってみよう（余裕がある人向け）
+↓",11
+https://www.nnn.ed.nico/courses/488/chapters/6638,11
+"■ ドットインストール 【Chart.js】
+↓",12
+https://dotinstall.com/lessons/basic_chartjs,12
+"自作Webアプリケーションの開発
+Step1
+↓",13
+https://docs.google.com/presentation/d/1d8SNZax15klO1h43nnJP9TQ_GT3ShIAiFRJOw_dqu48/edit#slide=id.p,13
+"自作Webアプリケーションの開発
+■ ドットインストール 【JavaScriptでカレンダーを作ろう】
+↓",14
+https://designsupply-web.com/media/programming/4649/,14
+"■ 参考記事：fetch APIで外部のJSONデータを取得する
+↓",14
+https://designsupply-web.com/media/programming/4649/,14
+"""ｿｽｿｽｿｽｿ""自作Webアプリケーションの開発
+Step3""			",15
+"自作Webアプリケーションの開発
+Step4""",16
+"■ドットインストール
+その他のレッスン
+　Docker入門 (全11回) PREMIUM",17
+"Dokerを利用するメリット
+https://agency-star.co.jp/column/docker/#Docker-3",17
+"Dokerの仕組み(レジストリ)を理解する
+https://docs.docker.jp/registry/introduction.html",17
+"Docker runコマンドのドキュメント(portなどの設定をする際に役立つ)
+https://docs.docker.jp/engine/reference/commandline/run.html",17
+"Docker logsコマンドのドキュメント(コンテナでエラーが発生した時などログを調べる際に役立つ)
+https://docs.docker.jp/engine/reference/commandline/logs.html",17
+"""■ドットインストール
+PHPでウェブサービスを作れるようになろう
+　詳解PHP 基礎文法編 (全34回)""								",18
+"■ 公式ドキュメント
+https://www.php.net/manual/ja/intro-whatis.php
+phpで関数を調べるときに参照すると良い",19
+"よく使う関数の1例を挙げています。
+ドキュメントを読む練習がてら読んでみてください
+https://www.php.net/manual/ja/control-structures.switch.php",19
+https://www.php.net/manual/ja/function.array-merge,19
+"■ドットインストール
+・PHPでウェブサービスを作れるようになろう
+　詳解PHP 基礎文法編 (全34回)",19
+"""■ドットインストール
+PHPでウェブサービスを作れるようになろう
+　詳解PHP ビルトイン関数編 (全32回)""				",20
+"■ドットインストール
+PHPでウェブサービスを作れるようになろう
+　詳解PHP オブジェクト編 (全26回)",21
+"■ドットインストール
+PHPでウェブサービスを作れるようになろう
+　詳解PHP ウェブ開発編 [macOS版] (全34回)",22
+"Docker execコマンド(コンテナに入って作業する際に役立つ)
+https://matsuand.github.io/docs.docker.jp.onthefly/engine/reference/commandline/exec/",22
+"DB(テーブル設計/作成)
+https://proengineer.internous.co.jp/content/columnfeature/6728",22
+"""■ドットインストール
+PHPでウェブサービスを作れるようになろう
+　詳解PHP ウェブ開発編 [macOS版] (全34回)""				",23
+"""■ドットインストール
+PHPでウェブサービスを作れるようになろう
+　詳解PHP データベース編 (全19回)""				",24
+"■ドットインストール
+データベースを学ぼう
+　MySQL入門 応用編 (14回まで)",26
+"■ドットインストール
+データベースを学ぼう
+　MySQL入門 応用編 (15-37回)",27
+"""Chapter2 ルーティングとコントローラ
+　参考書の内容を確認し、実装してみてください
+　サンプルコードがダウンロード可能ですが、使用せず手でコードを入力してください""				",33
+"■参考書（Laravel 入門）
+Chapter3 ビューとテンプレート
+　参考書の内容を確認し、実装してみてください
+　サンプルコードがダウンロード可能ですが、使用せず手でコードを入力してください",34
+"■参考書（Laravel 入門）
+Chapter4 リクエスト・レスポンスを補完する
+　参考書の内容を確認し、実装してみてください
+　サンプルコードがダウンロード可能ですが、使用せず手でコードを入力してください",35
+"■参考書（Laravel 入門）
+Chapter5 データベースの利用
+　参考書の内容を確認し、実装してみてください
+　サンプルコードがダウンロード可能ですが、
+　使用せず手でコードを入力してください
+　※参考書ではSQLiteを使う手順となっていますが、SQLiteについては実際のインストールなどは不要で手順の確認にとどめてください。
+　※実際はMySQLを使用しますので、P189 MySQL / PostgreSQLを確認し設定を行ってください。",36
+"■参考書（Laravel 入門）
+Chapter7 RESTful サービス/セッション・・・・・・
+　参考書の内容を確認し、実装してみてください
+　サンプルコードがダウンロード可能ですが、使用せず手でコードを入力してください",37
+"■Git
+・Gitの復習
+　ドットインストール git入門
+https://dotinstall.com/lessons/basic_git",49
+"・ブランチの種類について
+　Git-flowって何？
+https://qiita.com/KosukeSone/items/514dd24828b485c69a05",49
+"・プルリクエストについて
+　https://backlog.com/ja/git-tutorial/pull-request/01/",49
+https://backlog.com/ja/git-tutorial/pull-request/02/,49
+https://backlog.com/ja/git-tutorial/pull-request/03/,49
+"・Gitのコミットメッセージの重要性について
+　誰にとってもわかりやすいGitのコミットメッセージl
+https://www.tam-tam.co.jp/tipsnote/program/post16686.html",49
+"■Frontend（CSS Framework）
+・CSSフレームワークのトレンド
+　2021年版！おすすめのCSSフレームワーク総まとめ
+　https://webdesign-trends.net/entry/12965
+
+　※ページに目を通してそれぞれのフレームワーク特徴などをざっくり確認してください
+　※上記ページのCSSフレームワークから2つ抜粋して学習します",50
+"・Bootstrap（復習）
+　Bootstrap 5入門https://dotinstall.com/lessons/basic_bootstrap
+　※実際にコーディングはしなくて良いです、開発の流れを確認してください",50
+"・Tailwind CSS
+　Tailwind CSS公式　https://tailwindcss.com/
+　Utility-First
+　Responsive Design
+　Width
+　Height
+　のページを確認し概要を理解してください
+　※英語で読むのが厳しい場合は日本語翻訳で",50
+"■Frontend
+・JavaScriptフレームワーク
+　JavaScript: フレームワーク React/Vue/Angularについて5
+　ページに目を通してそれぞれのフレームワーク
+　特徴などをざっくり確認してください
+　上記ページのJavaScriptフレームワークから
+　1つ抜粋して学習します",51
+"■Frontend
+・Vue.js
+　Vue.js入門
+　以下の13コンテンツを学習してください、
+　#01 Vue.jsを使ってみよう～
+　#13 LocalStorageからデータを読み出してみよう
+　POSSE課題でも利用するので実際にコードを書いてください",51
+"・サイトレンダリングの種類について
+　SPA、SSR、プリレンダリングの違いをまとめてみた
+　Vue.jsのコンテンツを提供する方法について学習します
+　SPA、SSRについて動作の違いを理解し
+　メリット、デメリットを確認してください",51
+"・フロントエンドの今後について
+　2020年のウェブフロントエンドエンジニアが学び実践すべきこと
+　フロントエンドの動向について確認し、
+　なぜVue.jsを学習したのか確認してください
+　バックエンドJavaScriptはまだ手を出さなくて大丈夫です",51
+"■オブジェクト指向プログラミング
+・オブジェクト指向
+　PHPオブジェクト指向入門（前半）
+　クロージャについての解説以降はオブジェクト志向には直接関係ありませんが、押さえておいて欲しい内容となります。",52
+"JavaScriptでピンポンゲームを作ろう
+　コンテンツを全て確認してください。ピンポンゲームがオブジェクト志向で記述されているので、オブジェクト志向を理解する事を意識して学習を進めてください",52
+"■セキュリティ
+N予備校
+　-【2021年度】プログラミング入門 Webアプリ
+　- サーバーサイドプログラミング入門
+28.脆弱性
+　代表的な脆弱性について名前は知っているという状態にしてください
+　詳細は後ほど学習します
+　OSコマンドインジェクションの体験コンテンツと、脆弱性修正の練習問題があるので実施してください。
+　練習問題はPOSSE課題として扱います",54
+"29.XSS脆弱性の対策
+　細かい内容は覚える必要が無いですが、なぜ脆弱性が発生するのかどうしたら防げるかを理解してください
+　XSS脆弱性の体験コンテンツと、脆弱性修正の練習問題があるので実施してください。
+　練習問題はPOSSE課題として扱います
+　リグレッション、テストの節はオプションの内容としますので、時間がない場合は飛ばしてOKです",54
+"30.パスワードの脆弱性の対策
+　細かい内容は覚える必要が無いですが、平文のパスワードがなぜ問題となるかを理解してください
+　パスワードのハッシュ化、総当たり攻撃の体験コンテンツと、ゲストユーザに新しいパスワードを設定する練習問題があるので実施してください。
+　練習問題はPOSSE課題として扱います",54
+"31.セッション固定化攻撃脆弱性の対策
+　細かい内容は覚える必要が無いですが、セッション固定化攻撃脆弱性がなぜ問題となるかを理解してください
+　セッション固定化攻撃脆弱性の体験コンテンツと、脆弱性修正の練習問題があるので実施してください。
+　練習問題はPOSSE課題として扱います",54
+"32.より堅牢なセッション管理
+　細かい内容は覚える必要が無いですが、セッションののっとりについて理解してください
+　ハッシュ値推測の体験コンテンツと、安全なトラッキングIDへ修正の練習問題があるので実施してください。
+　練習問題はPOSSE課題として扱います",54
+"33.CSRF脆弱性の対策
+　細かい内容は覚える必要が無いですが、CSRF脆弱性がなぜ問題となるかを理解してください
+　CSRF脆弱性の体験コンテンツと、削除処理のCSRF脆弱性対応の練習問題があるので実施してください。
+　練習問題はPOSSE課題として扱います",54
+"■Backend
+N予備校
+　-【2021年度】プログラミング入門 Webアプリ
+　- 実践サーバーサイドプログラミング
+11.【データベース1】RDBMS と SQL
+　ここでは主キーについてしっかり押さえて下さい
+　他は以前学習している内容の復習になるので軽く流して下さい",55
+"■Backend
+12.【データベース2】データモデリング
+　以前学習している内容の復習になるので軽く流して下さい",55
+"13.【データベース3】テーブルの結合
+　以前学習している内容の復習になるので軽く流して下さい
+",55
+"14.【データベース4】インデックス
+　インデックスについてしっかり押さえて下さい
+　インデックスがない場合のデータ検索処理
+　ある場合のデータ検索処理の違いを理解してください",55
+"15.【データベース5】テーブルの集計
+　以前学習している内容の復習になるので軽く流して下さい",55
+"・Database (RDB、NoSQL)
+　RDBの限界とNoSQLの登場
+　RDB（リレーショナルデータベース）とは？NoSQLデータベースとの違いを徹底解説
+　アプリケーションの要件により適切なDBの種類が変わります、
+　RDBとNoSQLとの違いについて学習して下さい",55
+"・ER図
+　やさしい図解で学ぶ　ER図　表記法一覧d
+　今まで作ったWebアプリケーションのテーブルを、
+　ER図で表現するとどうなるのかイメージしながら
+　内容を確認して下さい
+
+",55
+"■Backend
+・ API (APIとは, RestAPI)
+　【初学者向け】APIを理解したい人がまず最初に見る動画(14分)",57
+"・0からREST APIについて調べてみた
+　0からREST APIについて調べてみた",57
+"・APIとは？初心者向けに分かりやすく解説します。
+　https://products.sint.co.jp/topsic/blog/api",57
+"・Postmanのインストールと、住所の取得
+　https://qiita.com/morioka1206/items/1bcd62e28e22a4ffdace",57
+"・どんなAPIが公開されているか見てみよう
+　https://api.app-rox.com/
+　→気になったAPIを使って、データの取得をしてみよう
+
+
+",57
+"■Backend
+- Testing (単体テスト, 結合テスト, 統合テスト, 受け入れテスト)
+→https://pm-rasinban.com/ut-it-st
+→https://service.shiftinc.jp/column/3659/",58
+"・テスト駆動開発（TDD）とは？TDDの進め方をステップ毎に解説！
+→ https://www.qbook.jp/column/20181009_713.html
+",58
+・教材(Laravel 入門 7-5 ユニットテスト),58
+"■DevOps
+- IaC
+→https://www.sbbit.jp/article/cont1/39402
+→https://licensecounter.jp/devops-hub/blog/IaC/",59
+"- CI/CD
+→ https://codezine.jp/article/detail/11083
+→ https://github.co.jp/features/actions",59
+"""■AWS
+【超初心者向け】AWSとは？現役エンジニアが鬼わかりやすく徹底解説
+
+AWS Summit Online 2021 基調講演：テクノロジーが変えるこれからの日本社会""				",60
