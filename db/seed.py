@@ -11,5 +11,5 @@ paths = ['weeks', 'input_curriculums', 'output_curriculums']
 for path in paths:
     seed = os.path.join(seeds_dir, path, 'seed.py')
     cmd = f"python {seed}"
-    print(f"{COLOR_GREEN}Seeding {path}{COLOR_END}")
+    print(f"{COLOR_GREEN}Seeding {path}...{COLOR_END}")
     subprocess.call(cmd, shell=True)

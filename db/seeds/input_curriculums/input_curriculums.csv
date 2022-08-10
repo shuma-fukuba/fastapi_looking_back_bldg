@@ -1,13 +1,335 @@
-Näºˆå‚™æ ¡ï¼š02.ãƒ—ãƒ­ã‚°ãƒ©ãƒŸãƒ³ã‚°ä½“é¨“ã‚’ã—ã¦ã¿ã‚ˆã†,1
-Näºˆå‚™æ ¡ï¼š03.ã¯ã˜ã‚ã¦ã®HTML,1
-Näºˆå‚™æ ¡ï¼š04.ã•ã¾ã–ã¾ãªHTMLã‚¿ã‚°,1
-Näºˆå‚™æ ¡ï¼š05.HTMLã§ä½œã‚‹è‡ªå·±ç´¹ä»‹ãƒšãƒ¼ã‚¸,1
-Näºˆå‚™æ ¡ï¼š06.ã¯ã˜ã‚ã¦ã®JavaScript,1
-Näºˆå‚™æ ¡ï¼š07.JavaScriptã§ã®è¨ˆç®—,1
-"â– HTMLãƒ»CSSãƒ‡ã‚¶ã‚¤ãƒ³ã‚³ãƒ¼ã‚¹ã‚’ã¯ã˜ã‚ã‚‹æ–¹ã¸
-Näºˆå‚™æ ¡ï¼š02.Webã‚µã‚¤ãƒˆã¨ãƒ–ãƒ©ã‚¦ã‚¶ã®åŸºç¤ŽçŸ¥è­˜"
-Näºˆå‚™æ ¡ï¼š03.HTMLã¨CSSã‚’ä½¿ã£ã¦ã¿ã‚ˆã†
-Näºˆå‚™æ ¡ï¼š04.Webã‚µã‚¤ãƒˆã®ãƒ¬ã‚¤ã‚¢ã‚¦ãƒˆã«ã¤ã„ã¦çŸ¥ã‚ã†
-Näºˆå‚™æ ¡ï¼š05.HTMLã¨CSSã§ãƒ¬ã‚¤ã‚¢ã‚¦ãƒˆã‚’çµ„ã‚“ã§ã¿ã‚ˆã†
-Näºˆå‚™æ ¡ï¼š06.HTMLã«ã¤ã„ã¦è©³ã—ãå­¦ã¼ã†
-Näºˆå‚™æ ¡ï¼š07.CSSã§è£…é£¾ã—ã‚ˆã†				
+curriculum,week
+"¡HTMLECSSƒfƒUƒCƒ“ƒR[ƒX‚ð‚Í‚¶‚ß‚é•û‚Ö
+N—\”õZF02.WebƒTƒCƒg‚Æƒuƒ‰ƒEƒU‚ÌŠî‘b’mŽ¯",1
+N—\”õZF03.HTML‚ÆCSS‚ðŽg‚Á‚Ä‚Ý‚æ‚¤,1
+N—\”õZF04.WebƒTƒCƒg‚ÌƒŒƒCƒAƒEƒg‚É‚Â‚¢‚Ä’m‚ë‚¤,1
+N—\”õZF05.HTML‚ÆCSS‚ÅƒŒƒCƒAƒEƒg‚ð‘g‚ñ‚Å‚Ý‚æ‚¤,1
+N—\”õZF06.HTML‚É‚Â‚¢‚ÄÚ‚µ‚­Šw‚Ú‚¤,1
+N—\”õZF07.CSS‚Å‘•ü‚µ‚æ‚¤,1
+"¡ N—\”õZ WebƒfƒUƒCƒ“ HTMLECSSƒfƒUƒCƒ“ƒR[ƒX
+yHTML‚ÆCSS‚Ì‰ž—pŠwKz
+N—\”õZF01.ƒ{ƒ^ƒ“‚ð‚Â‚­‚Á‚Ä‚Ý‚æ‚¤",2
+N—\”õZF02.CSS‚ðŽg‚Á‚½Ž©—R‚È•\Œ»,2
+N—\”õZF03.‚¨–â‚¢‡‚í‚¹ƒtƒH[ƒ€‚ðì‚Á‚Ä‚Ý‚æ‚¤,2
+N—\”õZF04.‚¨–â‚¢‡‚í‚¹ƒtƒH[ƒ€‚ð‘•ü‚µ‚æ‚¤,2
+"¡ CSS“ü–åuÀ
+«",2
+https://www.youtube.com/watch?v=UKN8IH6LBwA&list=PLDkIaO69NH-vdoaI4vD2hW3b6uKZduD5a,2
+N—\”õZF08.JavaScript‚Å˜_—‚ðˆµ‚¤,2
+"¡ŒŸØƒc[ƒ‹‚ÌŽg‚¢•û
+«",2
+https://prog-8.com/docs/html-dev,2
+"¡ N—\”õZ ƒvƒƒOƒ‰ƒ~ƒ“ƒO“ü–åƒR[ƒX
+y‘æ1Í ‚Í‚¶‚ß‚æ‚¤z
+19.GitHub‚ÅWebƒTƒCƒgŒöŠJ
+yGitHub ‚Éu‚ ‚È‚½‚Ì‚¢‚¢‚Æ‚±‚ëf’fv‚ð’u‚¢‚Ä‚Ý‚æ‚¤Bz‚Æ‚È‚Á‚Ä‚¢‚Ü‚·‚ªAì‚Á‚Ä‚¢‚È‚¢‚½‚ßAWebƒfƒUƒCƒ“ƒR[ƒX‚Åì‚Á‚½ƒf[ƒ^‚ðƒAƒbƒvƒ[ƒh‚µ‚Ä‚Ý‚Ü‚µ‚å‚¤B
+",3
+"
+¡ N—\”õZ ƒvƒƒOƒ‰ƒ~ƒ“ƒO“ü–åƒR[ƒX
+y‘æ2Í €”õ‚µ‚æ‚¤z
+
+13.Git ‚Æ GitHub ‚Ì˜AŒg",3
+14.GitHub ‚Ö‚Ì push,3
+15.Git ‚Ìƒuƒ‰ƒ“ƒ`,3
+"¡ “®‰æ‹³Þ
+Git + GitHub‚ÌŽg‚¢•û“ü–åuÀiŠî–{‘€ì‚Ì‚¨‚³‚ç‚¢j
+«",4
+https://www.youtube.com/watch?v=LDOR5HfI_sQ,4
+"GitHub‚ÌŽg‚¢•û‚É‚Â‚¢‚Ä‚Ì“®‰æiGit flowj
+«",4
+https://www.youtube.com/watch?v=0ge7ZJQvYLw,4
+https://drive.google.com/file/d/1r5YA9OeRqgnbGJqEkst7jX7xXUCwWWZn/view?usp=sharing,4
+https://drive.google.com/file/d/17Drk5WZgKOGQ4RKsWnqnjOsYi7hfQzn5/view?usp=sharing,4
+N—\”õZF08.JavaScript‚Å˜_—‚ðˆµ‚¤,4
+"¡ ƒy[ƒW‚ÌƒfƒBƒŒƒNƒgƒŠŽQl
+ƒfƒBƒŒƒNƒgƒŠ\¬Eƒtƒ@ƒCƒ‹–¼
+«",4
+https://jam25.jp/html/html-css-03/#outline__5_2,4
+"¡ N—\”õZ WebƒfƒUƒCƒ“ƒR[ƒX
+yJavaScript‚ÌŠî‘b‚ðŠw‚Ôz
+01.‚Í‚¶‚ß‚Ä‚ÌJavaScript
+«",5
+https://www.nnn.ed.nico/courses/488/chapters/6638,5
+"¡ ƒhƒbƒgƒCƒ“ƒXƒg[ƒ‹ yÚ‰ðJavaScript Šî‘b•¶–@•Òz
+«",5
+https://dotinstall.com/lessons/basic_javascript_grammer_v2,5
+"¡ƒhƒbƒgƒCƒ“ƒXƒg[ƒ‹
+yÚ‰ðJavaScript ƒIƒuƒWƒFƒNƒg•Òz
+«",6
+https://dotinstall.com/lessons/basic_javascript_objects_v2,6
+"yÚ‰ðJavaScript DOM•Òz
+«",6
+https://dotinstall.com/lessons/basic_javascript_dom_v2,6
+"¡ N—\”õZ ƒvƒƒOƒ‰ƒ~ƒ“ƒO“ü–åƒR[ƒX
+y‘æ1Í ‚Í‚¶‚ß‚æ‚¤z
+06.‚Í‚¶‚ß‚Ä‚ÌJavaScript",7
+07.JavaScript‚Å‚ÌŒvŽZ,7
+08.JavaScript‚Å˜_—‚ðˆµ‚¤,7
+09.JavaScript‚Ìƒ‹[ƒv,7
+10.JavaScript‚ÌƒRƒŒƒNƒVƒ‡ƒ“,7
+11.JavaScript‚ÌŠÖ”,7
+N—\”õZF08.JavaScript‚Å˜_—‚ðˆµ‚¤,7
+"¡ N—\”õZ ƒvƒƒOƒ‰ƒ~ƒ“ƒO“ü–åƒR[ƒX y‘æ1Í ‚Í‚¶‚ß‚æ‚¤z
+16.f’f‹@”\‚ÌŠJ”­",7
+17.f’f‹@”\‚Ì‘g‚Ýž‚Ý,7
+18.ƒcƒC[ƒg‹@”\‚ÌŠJ”­,7
+"¡ “®‰æ‹³Þ@ƒŒƒXƒ|ƒ“ƒVƒuWebƒfƒUƒCƒ“‚ÌŠî‘b
+yƒƒfƒBƒAƒNƒGƒŠ‚É‚Â‚¢‚Äz
+«",9
+https://www.youtube.com/watch?v=xdUjlpHRX0U,9
+"yƒŒƒXƒ|ƒ“ƒVƒuWebƒfƒUƒCƒ“‚ÌŠî‘bz
+«",9
+https://www.youtube.com/watch?v=79Dr3RGm0SI,9
+"¡ N—\”õZ WebƒfƒUƒCƒ“ƒR[ƒX
+yJavaScript‚ÌŠî‘b‚ðŠw‚Ôz
+02.jQuery‚ðŽg‚Á‚Ä‚Ý‚æ‚¤?@",11
+03.jQuery‚ðŽg‚Á‚Ä‚Ý‚æ‚¤?A,11
+"04.jQueryƒvƒ‰ƒOƒCƒ“‚ðŽg‚Á‚Ä‚Ý‚æ‚¤i—]—T‚ª‚ ‚élŒü‚¯j
+«",11
+https://www.nnn.ed.nico/courses/488/chapters/6638,11
+"¡ ƒhƒbƒgƒCƒ“ƒXƒg[ƒ‹ yChart.jsz
+«",12
+https://dotinstall.com/lessons/basic_chartjs,12
+"Ž©ìWebƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚ÌŠJ”­
+Step1
+«",13
+https://docs.google.com/presentation/d/1d8SNZax15klO1h43nnJP9TQ_GT3ShIAiFRJOw_dqu48/edit#slide=id.p,13
+"Ž©ìWebƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚ÌŠJ”­
+¡ ƒhƒbƒgƒCƒ“ƒXƒg[ƒ‹ yJavaScript‚ÅƒJƒŒƒ“ƒ_[‚ðì‚ë‚¤z
+«",14
+https://designsupply-web.com/media/programming/4649/,14
+"¡ ŽQl‹LŽ–Ffetch API‚ÅŠO•”‚ÌJSONƒf[ƒ^‚ðŽæ“¾‚·‚é
+«",14
+https://designsupply-web.com/media/programming/4649/,14
+"""¿½¿½¿½¿""Ž©ìWebƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚ÌŠJ”­
+Step3""			",15
+"Ž©ìWebƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚ÌŠJ”­
+Step4""",16
+"¡ƒhƒbƒgƒCƒ“ƒXƒg[ƒ‹
+‚»‚Ì‘¼‚ÌƒŒƒbƒXƒ“
+@Docker“ü–å (‘S11‰ñ) PREMIUM",17
+"Doker‚ð—˜—p‚·‚éƒƒŠƒbƒg
+https://agency-star.co.jp/column/docker/#Docker-3",17
+"Doker‚ÌŽd‘g‚Ý(ƒŒƒWƒXƒgƒŠ)‚ð—‰ð‚·‚é
+https://docs.docker.jp/registry/introduction.html",17
+"Docker runƒRƒ}ƒ“ƒh‚ÌƒhƒLƒ…ƒƒ“ƒg(port‚È‚Ç‚ÌÝ’è‚ð‚·‚éÛ‚É–ð—§‚Â)
+https://docs.docker.jp/engine/reference/commandline/run.html",17
+"Docker logsƒRƒ}ƒ“ƒh‚ÌƒhƒLƒ…ƒƒ“ƒg(ƒRƒ“ƒeƒi‚ÅƒGƒ‰[‚ª”­¶‚µ‚½Žž‚È‚ÇƒƒO‚ð’²‚×‚éÛ‚É–ð—§‚Â)
+https://docs.docker.jp/engine/reference/commandline/logs.html",17
+"""¡ƒhƒbƒgƒCƒ“ƒXƒg[ƒ‹
+PHP‚ÅƒEƒFƒuƒT[ƒrƒX‚ðì‚ê‚é‚æ‚¤‚É‚È‚ë‚¤
+@Ú‰ðPHP Šî‘b•¶–@•Ò (‘S34‰ñ)""								",18
+"¡ ŒöŽ®ƒhƒLƒ…ƒƒ“ƒg
+https://www.php.net/manual/ja/intro-whatis.php
+php‚ÅŠÖ”‚ð’²‚×‚é‚Æ‚«‚ÉŽQÆ‚·‚é‚Æ—Ç‚¢",19
+"‚æ‚­Žg‚¤ŠÖ”‚Ì1—á‚ð‹“‚°‚Ä‚¢‚Ü‚·B
+ƒhƒLƒ…ƒƒ“ƒg‚ð“Ç‚Þ—ûK‚ª‚Ä‚ç“Ç‚ñ‚Å‚Ý‚Ä‚­‚¾‚³‚¢
+https://www.php.net/manual/ja/control-structures.switch.php",19
+https://www.php.net/manual/ja/function.array-merge,19
+"¡ƒhƒbƒgƒCƒ“ƒXƒg[ƒ‹
+EPHP‚ÅƒEƒFƒuƒT[ƒrƒX‚ðì‚ê‚é‚æ‚¤‚É‚È‚ë‚¤
+@Ú‰ðPHP Šî‘b•¶–@•Ò (‘S34‰ñ)",19
+"""¡ƒhƒbƒgƒCƒ“ƒXƒg[ƒ‹
+PHP‚ÅƒEƒFƒuƒT[ƒrƒX‚ðì‚ê‚é‚æ‚¤‚É‚È‚ë‚¤
+@Ú‰ðPHP ƒrƒ‹ƒgƒCƒ“ŠÖ”•Ò (‘S32‰ñ)""				",20
+"¡ƒhƒbƒgƒCƒ“ƒXƒg[ƒ‹
+PHP‚ÅƒEƒFƒuƒT[ƒrƒX‚ðì‚ê‚é‚æ‚¤‚É‚È‚ë‚¤
+@Ú‰ðPHP ƒIƒuƒWƒFƒNƒg•Ò (‘S26‰ñ)",21
+"¡ƒhƒbƒgƒCƒ“ƒXƒg[ƒ‹
+PHP‚ÅƒEƒFƒuƒT[ƒrƒX‚ðì‚ê‚é‚æ‚¤‚É‚È‚ë‚¤
+@Ú‰ðPHP ƒEƒFƒuŠJ”­•Ò [macOS”Å] (‘S34‰ñ)",22
+"Docker execƒRƒ}ƒ“ƒh(ƒRƒ“ƒeƒi‚É“ü‚Á‚Äì‹Æ‚·‚éÛ‚É–ð—§‚Â)
+https://matsuand.github.io/docs.docker.jp.onthefly/engine/reference/commandline/exec/",22
+"DB(ƒe[ƒuƒ‹ÝŒv/ì¬)
+https://proengineer.internous.co.jp/content/columnfeature/6728",22
+"""¡ƒhƒbƒgƒCƒ“ƒXƒg[ƒ‹
+PHP‚ÅƒEƒFƒuƒT[ƒrƒX‚ðì‚ê‚é‚æ‚¤‚É‚È‚ë‚¤
+@Ú‰ðPHP ƒEƒFƒuŠJ”­•Ò [macOS”Å] (‘S34‰ñ)""				",23
+"""¡ƒhƒbƒgƒCƒ“ƒXƒg[ƒ‹
+PHP‚ÅƒEƒFƒuƒT[ƒrƒX‚ðì‚ê‚é‚æ‚¤‚É‚È‚ë‚¤
+@Ú‰ðPHP ƒf[ƒ^ƒx[ƒX•Ò (‘S19‰ñ)""				",24
+"¡ƒhƒbƒgƒCƒ“ƒXƒg[ƒ‹
+ƒf[ƒ^ƒx[ƒX‚ðŠw‚Ú‚¤
+@MySQL“ü–å ‰ž—p•Ò (14‰ñ‚Ü‚Å)",26
+"¡ƒhƒbƒgƒCƒ“ƒXƒg[ƒ‹
+ƒf[ƒ^ƒx[ƒX‚ðŠw‚Ú‚¤
+@MySQL“ü–å ‰ž—p•Ò (15-37‰ñ)",27
+"""Chapter2 ƒ‹[ƒeƒBƒ“ƒO‚ÆƒRƒ“ƒgƒ[ƒ‰
+@ŽQl‘‚Ì“à—e‚ðŠm”F‚µAŽÀ‘•‚µ‚Ä‚Ý‚Ä‚­‚¾‚³‚¢
+@ƒTƒ“ƒvƒ‹ƒR[ƒh‚ªƒ_ƒEƒ“ƒ[ƒh‰Â”\‚Å‚·‚ªAŽg—p‚¹‚¸Žè‚ÅƒR[ƒh‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢""				",33
+"¡ŽQl‘iLaravel “ü–åj
+Chapter3 ƒrƒ…[‚Æƒeƒ“ƒvƒŒ[ƒg
+@ŽQl‘‚Ì“à—e‚ðŠm”F‚µAŽÀ‘•‚µ‚Ä‚Ý‚Ä‚­‚¾‚³‚¢
+@ƒTƒ“ƒvƒ‹ƒR[ƒh‚ªƒ_ƒEƒ“ƒ[ƒh‰Â”\‚Å‚·‚ªAŽg—p‚¹‚¸Žè‚ÅƒR[ƒh‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢",34
+"¡ŽQl‘iLaravel “ü–åj
+Chapter4 ƒŠƒNƒGƒXƒgEƒŒƒXƒ|ƒ“ƒX‚ð•âŠ®‚·‚é
+@ŽQl‘‚Ì“à—e‚ðŠm”F‚µAŽÀ‘•‚µ‚Ä‚Ý‚Ä‚­‚¾‚³‚¢
+@ƒTƒ“ƒvƒ‹ƒR[ƒh‚ªƒ_ƒEƒ“ƒ[ƒh‰Â”\‚Å‚·‚ªAŽg—p‚¹‚¸Žè‚ÅƒR[ƒh‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢",35
+"¡ŽQl‘iLaravel “ü–åj
+Chapter5 ƒf[ƒ^ƒx[ƒX‚Ì—˜—p
+@ŽQl‘‚Ì“à—e‚ðŠm”F‚µAŽÀ‘•‚µ‚Ä‚Ý‚Ä‚­‚¾‚³‚¢
+@ƒTƒ“ƒvƒ‹ƒR[ƒh‚ªƒ_ƒEƒ“ƒ[ƒh‰Â”\‚Å‚·‚ªA
+@Žg—p‚¹‚¸Žè‚ÅƒR[ƒh‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢
+@¦ŽQl‘‚Å‚ÍSQLite‚ðŽg‚¤Žè‡‚Æ‚È‚Á‚Ä‚¢‚Ü‚·‚ªASQLite‚É‚Â‚¢‚Ä‚ÍŽÀÛ‚ÌƒCƒ“ƒXƒg[ƒ‹‚È‚Ç‚Í•s—v‚ÅŽè‡‚ÌŠm”F‚É‚Æ‚Ç‚ß‚Ä‚­‚¾‚³‚¢B
+@¦ŽÀÛ‚ÍMySQL‚ðŽg—p‚µ‚Ü‚·‚Ì‚ÅAP189 MySQL / PostgreSQL‚ðŠm”F‚µÝ’è‚ðs‚Á‚Ä‚­‚¾‚³‚¢B",36
+"¡ŽQl‘iLaravel “ü–åj
+Chapter7 RESTful ƒT[ƒrƒX/ƒZƒbƒVƒ‡ƒ“EEEEEE
+@ŽQl‘‚Ì“à—e‚ðŠm”F‚µAŽÀ‘•‚µ‚Ä‚Ý‚Ä‚­‚¾‚³‚¢
+@ƒTƒ“ƒvƒ‹ƒR[ƒh‚ªƒ_ƒEƒ“ƒ[ƒh‰Â”\‚Å‚·‚ªAŽg—p‚¹‚¸Žè‚ÅƒR[ƒh‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢",37
+"¡Git
+EGit‚Ì•œK
+@ƒhƒbƒgƒCƒ“ƒXƒg[ƒ‹ git“ü–å
+https://dotinstall.com/lessons/basic_git",49
+"Eƒuƒ‰ƒ“ƒ`‚ÌŽí—Þ‚É‚Â‚¢‚Ä
+@Git-flow‚Á‚Ä‰½H
+https://qiita.com/KosukeSone/items/514dd24828b485c69a05",49
+"Eƒvƒ‹ƒŠƒNƒGƒXƒg‚É‚Â‚¢‚Ä
+@https://backlog.com/ja/git-tutorial/pull-request/01/",49
+https://backlog.com/ja/git-tutorial/pull-request/02/,49
+https://backlog.com/ja/git-tutorial/pull-request/03/,49
+"EGit‚ÌƒRƒ~ƒbƒgƒƒbƒZ[ƒW‚Ìd—v«‚É‚Â‚¢‚Ä
+@’N‚É‚Æ‚Á‚Ä‚à‚í‚©‚è‚â‚·‚¢Git‚ÌƒRƒ~ƒbƒgƒƒbƒZ[ƒWl
+https://www.tam-tam.co.jp/tipsnote/program/post16686.html",49
+"¡FrontendiCSS Frameworkj
+ECSSƒtƒŒ[ƒ€ƒ[ƒN‚ÌƒgƒŒƒ“ƒh
+@2021”N”ÅI‚¨‚·‚·‚ß‚ÌCSSƒtƒŒ[ƒ€ƒ[ƒN‘‚Ü‚Æ‚ß
+@https://webdesign-trends.net/entry/12965
+
+@¦ƒy[ƒW‚É–Ú‚ð’Ê‚µ‚Ä‚»‚ê‚¼‚ê‚ÌƒtƒŒ[ƒ€ƒ[ƒN“Á’¥‚È‚Ç‚ð‚´‚Á‚­‚èŠm”F‚µ‚Ä‚­‚¾‚³‚¢
+@¦ã‹Lƒy[ƒW‚ÌCSSƒtƒŒ[ƒ€ƒ[ƒN‚©‚ç2‚Â”²ˆ‚µ‚ÄŠwK‚µ‚Ü‚·",50
+"EBootstrapi•œKj
+@Bootstrap 5“ü–åhttps://dotinstall.com/lessons/basic_bootstrap
+@¦ŽÀÛ‚ÉƒR[ƒfƒBƒ“ƒO‚Í‚µ‚È‚­‚Ä—Ç‚¢‚Å‚·AŠJ”­‚Ì—¬‚ê‚ðŠm”F‚µ‚Ä‚­‚¾‚³‚¢",50
+"ETailwind CSS
+@Tailwind CSSŒöŽ®@https://tailwindcss.com/
+@Utility-First
+@Responsive Design
+@Width
+@Height
+@‚Ìƒy[ƒW‚ðŠm”F‚µŠT—v‚ð—‰ð‚µ‚Ä‚­‚¾‚³‚¢
+@¦‰pŒê‚Å“Ç‚Þ‚Ì‚ªŒµ‚µ‚¢ê‡‚Í“ú–{Œê–|–ó‚Å",50
+"¡Frontend
+EJavaScriptƒtƒŒ[ƒ€ƒ[ƒN
+@JavaScript: ƒtƒŒ[ƒ€ƒ[ƒN React/Vue/Angular‚É‚Â‚¢‚Ä5
+@ƒy[ƒW‚É–Ú‚ð’Ê‚µ‚Ä‚»‚ê‚¼‚ê‚ÌƒtƒŒ[ƒ€ƒ[ƒN
+@“Á’¥‚È‚Ç‚ð‚´‚Á‚­‚èŠm”F‚µ‚Ä‚­‚¾‚³‚¢
+@ã‹Lƒy[ƒW‚ÌJavaScriptƒtƒŒ[ƒ€ƒ[ƒN‚©‚ç
+@1‚Â”²ˆ‚µ‚ÄŠwK‚µ‚Ü‚·",51
+"¡Frontend
+EVue.js
+@Vue.js“ü–å
+@ˆÈ‰º‚Ì13ƒRƒ“ƒeƒ“ƒc‚ðŠwK‚µ‚Ä‚­‚¾‚³‚¢A
+@#01 Vue.js‚ðŽg‚Á‚Ä‚Ý‚æ‚¤`
+@#13 LocalStorage‚©‚çƒf[ƒ^‚ð“Ç‚Ýo‚µ‚Ä‚Ý‚æ‚¤
+@POSSE‰Û‘è‚Å‚à—˜—p‚·‚é‚Ì‚ÅŽÀÛ‚ÉƒR[ƒh‚ð‘‚¢‚Ä‚­‚¾‚³‚¢",51
+"EƒTƒCƒgƒŒƒ“ƒ_ƒŠƒ“ƒO‚ÌŽí—Þ‚É‚Â‚¢‚Ä
+@SPAASSRAƒvƒŠƒŒƒ“ƒ_ƒŠƒ“ƒO‚Ìˆá‚¢‚ð‚Ü‚Æ‚ß‚Ä‚Ý‚½
+@Vue.js‚ÌƒRƒ“ƒeƒ“ƒc‚ð’ñ‹Ÿ‚·‚é•û–@‚É‚Â‚¢‚ÄŠwK‚µ‚Ü‚·
+@SPAASSR‚É‚Â‚¢‚Ä“®ì‚Ìˆá‚¢‚ð—‰ð‚µ
+@ƒƒŠƒbƒgAƒfƒƒŠƒbƒg‚ðŠm”F‚µ‚Ä‚­‚¾‚³‚¢",51
+"Eƒtƒƒ“ƒgƒGƒ“ƒh‚Ì¡Œã‚É‚Â‚¢‚Ä
+@2020”N‚ÌƒEƒFƒuƒtƒƒ“ƒgƒGƒ“ƒhƒGƒ“ƒWƒjƒA‚ªŠw‚ÑŽÀ‘H‚·‚×‚«‚±‚Æ
+@ƒtƒƒ“ƒgƒGƒ“ƒh‚Ì“®Œü‚É‚Â‚¢‚ÄŠm”F‚µA
+@‚È‚ºVue.js‚ðŠwK‚µ‚½‚Ì‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢
+@ƒoƒbƒNƒGƒ“ƒhJavaScript‚Í‚Ü‚¾Žè‚ðo‚³‚È‚­‚Ä‘åä•v‚Å‚·",51
+"¡ƒIƒuƒWƒFƒNƒgŽwŒüƒvƒƒOƒ‰ƒ~ƒ“ƒO
+EƒIƒuƒWƒFƒNƒgŽwŒü
+@PHPƒIƒuƒWƒFƒNƒgŽwŒü“ü–åi‘O”¼j
+@ƒNƒ[ƒWƒƒ‚É‚Â‚¢‚Ä‚Ì‰ðàˆÈ~‚ÍƒIƒuƒWƒFƒNƒgŽuŒü‚É‚Í’¼ÚŠÖŒW‚ ‚è‚Ü‚¹‚ñ‚ªA‰Ÿ‚³‚¦‚Ä‚¨‚¢‚Ä—~‚µ‚¢“à—e‚Æ‚È‚è‚Ü‚·B",52
+"JavaScript‚Åƒsƒ“ƒ|ƒ“ƒQ[ƒ€‚ðì‚ë‚¤
+@ƒRƒ“ƒeƒ“ƒc‚ð‘S‚ÄŠm”F‚µ‚Ä‚­‚¾‚³‚¢Bƒsƒ“ƒ|ƒ“ƒQ[ƒ€‚ªƒIƒuƒWƒFƒNƒgŽuŒü‚Å‹Lq‚³‚ê‚Ä‚¢‚é‚Ì‚ÅAƒIƒuƒWƒFƒNƒgŽuŒü‚ð—‰ð‚·‚éŽ–‚ðˆÓŽ¯‚µ‚ÄŠwK‚ði‚ß‚Ä‚­‚¾‚³‚¢",52
+"¡ƒZƒLƒ…ƒŠƒeƒB
+N—\”õZ
+@-y2021”N“xzƒvƒƒOƒ‰ƒ~ƒ“ƒO“ü–å WebƒAƒvƒŠ
+@- ƒT[ƒo[ƒTƒCƒhƒvƒƒOƒ‰ƒ~ƒ“ƒO“ü–å
+28.ÆŽã«
+@‘ã•\“I‚ÈÆŽã«‚É‚Â‚¢‚Ä–¼‘O‚Í’m‚Á‚Ä‚¢‚é‚Æ‚¢‚¤ó‘Ô‚É‚µ‚Ä‚­‚¾‚³‚¢
+@Ú×‚ÍŒã‚Ù‚ÇŠwK‚µ‚Ü‚·
+@OSƒRƒ}ƒ“ƒhƒCƒ“ƒWƒFƒNƒVƒ‡ƒ“‚Ì‘ÌŒ±ƒRƒ“ƒeƒ“ƒc‚ÆAÆŽã«C³‚Ì—ûK–â‘è‚ª‚ ‚é‚Ì‚ÅŽÀŽ{‚µ‚Ä‚­‚¾‚³‚¢B
+@—ûK–â‘è‚ÍPOSSE‰Û‘è‚Æ‚µ‚Äˆµ‚¢‚Ü‚·",54
+"29.XSSÆŽã«‚Ì‘Îô
+@×‚©‚¢“à—e‚ÍŠo‚¦‚é•K—v‚ª–³‚¢‚Å‚·‚ªA‚È‚ºÆŽã«‚ª”­¶‚·‚é‚Ì‚©‚Ç‚¤‚µ‚½‚ç–h‚°‚é‚©‚ð—‰ð‚µ‚Ä‚­‚¾‚³‚¢
+@XSSÆŽã«‚Ì‘ÌŒ±ƒRƒ“ƒeƒ“ƒc‚ÆAÆŽã«C³‚Ì—ûK–â‘è‚ª‚ ‚é‚Ì‚ÅŽÀŽ{‚µ‚Ä‚­‚¾‚³‚¢B
+@—ûK–â‘è‚ÍPOSSE‰Û‘è‚Æ‚µ‚Äˆµ‚¢‚Ü‚·
+@ƒŠƒOƒŒƒbƒVƒ‡ƒ“AƒeƒXƒg‚Ìß‚ÍƒIƒvƒVƒ‡ƒ“‚Ì“à—e‚Æ‚µ‚Ü‚·‚Ì‚ÅAŽžŠÔ‚ª‚È‚¢ê‡‚Í”ò‚Î‚µ‚ÄOK‚Å‚·",54
+"30.ƒpƒXƒ[ƒh‚ÌÆŽã«‚Ì‘Îô
+@×‚©‚¢“à—e‚ÍŠo‚¦‚é•K—v‚ª–³‚¢‚Å‚·‚ªA•½•¶‚ÌƒpƒXƒ[ƒh‚ª‚È‚º–â‘è‚Æ‚È‚é‚©‚ð—‰ð‚µ‚Ä‚­‚¾‚³‚¢
+@ƒpƒXƒ[ƒh‚ÌƒnƒbƒVƒ…‰»A‘“–‚½‚èUŒ‚‚Ì‘ÌŒ±ƒRƒ“ƒeƒ“ƒc‚ÆAƒQƒXƒgƒ†[ƒU‚ÉV‚µ‚¢ƒpƒXƒ[ƒh‚ðÝ’è‚·‚é—ûK–â‘è‚ª‚ ‚é‚Ì‚ÅŽÀŽ{‚µ‚Ä‚­‚¾‚³‚¢B
+@—ûK–â‘è‚ÍPOSSE‰Û‘è‚Æ‚µ‚Äˆµ‚¢‚Ü‚·",54
+"31.ƒZƒbƒVƒ‡ƒ“ŒÅ’è‰»UŒ‚ÆŽã«‚Ì‘Îô
+@×‚©‚¢“à—e‚ÍŠo‚¦‚é•K—v‚ª–³‚¢‚Å‚·‚ªAƒZƒbƒVƒ‡ƒ“ŒÅ’è‰»UŒ‚ÆŽã«‚ª‚È‚º–â‘è‚Æ‚È‚é‚©‚ð—‰ð‚µ‚Ä‚­‚¾‚³‚¢
+@ƒZƒbƒVƒ‡ƒ“ŒÅ’è‰»UŒ‚ÆŽã«‚Ì‘ÌŒ±ƒRƒ“ƒeƒ“ƒc‚ÆAÆŽã«C³‚Ì—ûK–â‘è‚ª‚ ‚é‚Ì‚ÅŽÀŽ{‚µ‚Ä‚­‚¾‚³‚¢B
+@—ûK–â‘è‚ÍPOSSE‰Û‘è‚Æ‚µ‚Äˆµ‚¢‚Ü‚·",54
+"32.‚æ‚èŒ˜˜S‚ÈƒZƒbƒVƒ‡ƒ“ŠÇ—
+@×‚©‚¢“à—e‚ÍŠo‚¦‚é•K—v‚ª–³‚¢‚Å‚·‚ªAƒZƒbƒVƒ‡ƒ“‚Ì‚Ì‚Á‚Æ‚è‚É‚Â‚¢‚Ä—‰ð‚µ‚Ä‚­‚¾‚³‚¢
+@ƒnƒbƒVƒ…’l„‘ª‚Ì‘ÌŒ±ƒRƒ“ƒeƒ“ƒc‚ÆAˆÀ‘S‚Èƒgƒ‰ƒbƒLƒ“ƒOID‚ÖC³‚Ì—ûK–â‘è‚ª‚ ‚é‚Ì‚ÅŽÀŽ{‚µ‚Ä‚­‚¾‚³‚¢B
+@—ûK–â‘è‚ÍPOSSE‰Û‘è‚Æ‚µ‚Äˆµ‚¢‚Ü‚·",54
+"33.CSRFÆŽã«‚Ì‘Îô
+@×‚©‚¢“à—e‚ÍŠo‚¦‚é•K—v‚ª–³‚¢‚Å‚·‚ªACSRFÆŽã«‚ª‚È‚º–â‘è‚Æ‚È‚é‚©‚ð—‰ð‚µ‚Ä‚­‚¾‚³‚¢
+@CSRFÆŽã«‚Ì‘ÌŒ±ƒRƒ“ƒeƒ“ƒc‚ÆAíœˆ—‚ÌCSRFÆŽã«‘Î‰ž‚Ì—ûK–â‘è‚ª‚ ‚é‚Ì‚ÅŽÀŽ{‚µ‚Ä‚­‚¾‚³‚¢B
+@—ûK–â‘è‚ÍPOSSE‰Û‘è‚Æ‚µ‚Äˆµ‚¢‚Ü‚·",54
+"¡Backend
+N—\”õZ
+@-y2021”N“xzƒvƒƒOƒ‰ƒ~ƒ“ƒO“ü–å WebƒAƒvƒŠ
+@- ŽÀ‘HƒT[ƒo[ƒTƒCƒhƒvƒƒOƒ‰ƒ~ƒ“ƒO
+11.yƒf[ƒ^ƒx[ƒX1zRDBMS ‚Æ SQL
+@‚±‚±‚Å‚ÍŽåƒL[‚É‚Â‚¢‚Ä‚µ‚Á‚©‚è‰Ÿ‚³‚¦‚Ä‰º‚³‚¢
+@‘¼‚ÍˆÈ‘OŠwK‚µ‚Ä‚¢‚é“à—e‚Ì•œK‚É‚È‚é‚Ì‚ÅŒy‚­—¬‚µ‚Ä‰º‚³‚¢",55
+"¡Backend
+12.yƒf[ƒ^ƒx[ƒX2zƒf[ƒ^ƒ‚ƒfƒŠƒ“ƒO
+@ˆÈ‘OŠwK‚µ‚Ä‚¢‚é“à—e‚Ì•œK‚É‚È‚é‚Ì‚ÅŒy‚­—¬‚µ‚Ä‰º‚³‚¢",55
+"13.yƒf[ƒ^ƒx[ƒX3zƒe[ƒuƒ‹‚ÌŒ‹‡
+@ˆÈ‘OŠwK‚µ‚Ä‚¢‚é“à—e‚Ì•œK‚É‚È‚é‚Ì‚ÅŒy‚­—¬‚µ‚Ä‰º‚³‚¢
+",55
+"14.yƒf[ƒ^ƒx[ƒX4zƒCƒ“ƒfƒbƒNƒX
+@ƒCƒ“ƒfƒbƒNƒX‚É‚Â‚¢‚Ä‚µ‚Á‚©‚è‰Ÿ‚³‚¦‚Ä‰º‚³‚¢
+@ƒCƒ“ƒfƒbƒNƒX‚ª‚È‚¢ê‡‚Ìƒf[ƒ^ŒŸõˆ—
+@‚ ‚éê‡‚Ìƒf[ƒ^ŒŸõˆ—‚Ìˆá‚¢‚ð—‰ð‚µ‚Ä‚­‚¾‚³‚¢",55
+"15.yƒf[ƒ^ƒx[ƒX5zƒe[ƒuƒ‹‚ÌWŒv
+@ˆÈ‘OŠwK‚µ‚Ä‚¢‚é“à—e‚Ì•œK‚É‚È‚é‚Ì‚ÅŒy‚­—¬‚µ‚Ä‰º‚³‚¢",55
+"EDatabase (RDBANoSQL)
+@RDB‚ÌŒÀŠE‚ÆNoSQL‚Ì“oê
+@RDBiƒŠƒŒ[ƒVƒ‡ƒiƒ‹ƒf[ƒ^ƒx[ƒXj‚Æ‚ÍHNoSQLƒf[ƒ^ƒx[ƒX‚Æ‚Ìˆá‚¢‚ð“O’ê‰ðà
+@ƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚Ì—vŒ‚É‚æ‚è“KØ‚ÈDB‚ÌŽí—Þ‚ª•Ï‚í‚è‚Ü‚·A
+@RDB‚ÆNoSQL‚Æ‚Ìˆá‚¢‚É‚Â‚¢‚ÄŠwK‚µ‚Ä‰º‚³‚¢",55
+"EER}
+@‚â‚³‚µ‚¢}‰ð‚ÅŠw‚Ô@ER}@•\‹L–@ˆê——d
+@¡‚Ü‚Åì‚Á‚½WebƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚Ìƒe[ƒuƒ‹‚ðA
+@ER}‚Å•\Œ»‚·‚é‚Æ‚Ç‚¤‚È‚é‚Ì‚©ƒCƒ[ƒW‚µ‚È‚ª‚ç
+@“à—e‚ðŠm”F‚µ‚Ä‰º‚³‚¢
+
+",55
+"¡Backend
+E API (API‚Æ‚Í, RestAPI)
+@y‰ŠwŽÒŒü‚¯zAPI‚ð—‰ð‚µ‚½‚¢l‚ª‚Ü‚¸Å‰‚ÉŒ©‚é“®‰æ(14•ª)",57
+"E0‚©‚çREST API‚É‚Â‚¢‚Ä’²‚×‚Ä‚Ý‚½
+@0‚©‚çREST API‚É‚Â‚¢‚Ä’²‚×‚Ä‚Ý‚½",57
+"EAPI‚Æ‚ÍH‰SŽÒŒü‚¯‚É•ª‚©‚è‚â‚·‚­‰ðà‚µ‚Ü‚·B
+@https://products.sint.co.jp/topsic/blog/api",57
+"EPostman‚ÌƒCƒ“ƒXƒg[ƒ‹‚ÆAZŠ‚ÌŽæ“¾
+@https://qiita.com/morioka1206/items/1bcd62e28e22a4ffdace",57
+"E‚Ç‚ñ‚ÈAPI‚ªŒöŠJ‚³‚ê‚Ä‚¢‚é‚©Œ©‚Ä‚Ý‚æ‚¤
+@https://api.app-rox.com/
+@¨‹C‚É‚È‚Á‚½API‚ðŽg‚Á‚ÄAƒf[ƒ^‚ÌŽæ“¾‚ð‚µ‚Ä‚Ý‚æ‚¤
+
+
+",57
+"¡Backend
+- Testing (’P‘ÌƒeƒXƒg, Œ‹‡ƒeƒXƒg, “‡ƒeƒXƒg, Žó‚¯“ü‚êƒeƒXƒg)
+¨https://pm-rasinban.com/ut-it-st
+¨https://service.shiftinc.jp/column/3659/",58
+"EƒeƒXƒg‹ì“®ŠJ”­iTDDj‚Æ‚ÍHTDD‚Ìi‚ß•û‚ðƒXƒeƒbƒv–ˆ‚É‰ðàI
+¨ https://www.qbook.jp/column/20181009_713.html
+",58
+E‹³Þ(Laravel “ü–å 7-5 ƒ†ƒjƒbƒgƒeƒXƒg),58
+"¡DevOps
+- IaC
+¨https://www.sbbit.jp/article/cont1/39402
+¨https://licensecounter.jp/devops-hub/blog/IaC/",59
+"- CI/CD
+¨ https://codezine.jp/article/detail/11083
+¨ https://github.co.jp/features/actions",59
+"""¡AWS
+y’´‰SŽÒŒü‚¯zAWS‚Æ‚ÍHŒ»–ðƒGƒ“ƒWƒjƒA‚ª‹S‚í‚©‚è‚â‚·‚­“O’ê‰ðà
+
+AWS Summit Online 2021 Šî’²u‰‰FƒeƒNƒmƒƒW[‚ª•Ï‚¦‚é‚±‚ê‚©‚ç‚Ì“ú–{ŽÐ‰ï""				",60

@@ -7,6 +7,7 @@ log/
 ~$*
 .python-version
 venv/
+*.ipynb
 
 htdocs/static/*
 !htdocs/static/.keep

@@ -1,5 +1,5 @@
 import uuid as uid
-from sqlalchemy import Column, String
+from sqlalchemy import Column, String, ForeignKey
 from sqlalchemy.orm import relationship
 from sqlalchemy_utils import UUIDType
 
@@ -19,11 +19,18 @@ class CurriculumBase(Base, TimestampMixin):
 
 
 class InputCurriculum(CurriculumBase):
+
+    week_id = Column(UUIDType(binary=False),
+                     ForeignKey('weeks.uuid'),
+                     primary_key=True)
+
     __tablename__ = 'input_curriculums'
 
     '''
     relationships
     '''
+    week = relationship('Week',
+                        back_populates='input_curriculums')
 
     users = relationship(
         'User',
@@ -35,6 +42,10 @@ class InputCurriculum(CurriculumBase):
 class OutputCurriculum(CurriculumBase):
     __tablename__ = 'output_curriculums'
 
+    week_id = Column(UUIDType(binary=False),
+                     ForeignKey('weeks.uuid'),
+                     primary_key=True)
+
     '''
     relationships
     '''
@@ -44,3 +55,6 @@ class OutputCurriculum(CurriculumBase):
         secondary=UsersOutputCurriculums.__tablename__,
         back_populates='output_curriculums'
     )
+
+    week = relationship('Week',
+                        back_populates='output_curriculums')
