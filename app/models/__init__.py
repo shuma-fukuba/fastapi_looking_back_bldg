@@ -5,3 +5,4 @@ from .learning_time import LearningTime  # noqa: F401
 from .week import Week  # noqa: F401
 from .looking_back import LookingBack  # noqa: F401
 from .user import User  # noqa: F401
+from .posse_year import PosseYear  # noqa: F401

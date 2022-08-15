@@ -1,7 +1,7 @@
 import uuid as uid
 from database import Base
 from .mixins import TimestampMixin
-from sqlalchemy import Integer, Column, String, Float
+from sqlalchemy import Integer, Column, String, ForeignKey
 # from sqlalchemy.dialects.mysql import INTEGER, BIGINT, FLOAT
 from sqlalchemy_utils import UUIDType
 from sqlalchemy.orm import relationship
@@ -23,8 +23,7 @@ class User(Base, TimestampMixin):
     cognito_user_id = Column(UUIDType(binary=False),
                              unique=True)
 
-    username = Column(String(256), nullable=False)
-    student_in_year_of_posse = Column(Float, nullable=False)
+    username = Column(String(256), unique=True, nullable=False)
     university = Column(String(256), nullable=True)
     university_entrance_year = Column(Integer, nullable=True)
     expected_university_graduation_year = Column(Integer, nullable=True)
@@ -34,6 +33,13 @@ class User(Base, TimestampMixin):
     '''
     relationships
     '''
+
+    posse_year_id = Column(UUIDType(binary=False),
+                           ForeignKey('posse_years.uuid'),
+                           nullable=False)
+
+    posse_year = relationship('PosseYear', back_populates='users')
+
     # user hasMany learning_times one-to-many
     learning_times = relationship("LearningTime", back_populates='user')
 

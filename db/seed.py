@@ -6,7 +6,7 @@ COLOR_END = '\033[0m'
 
 seeds_dir = os.path.join(os.path.dirname(__file__), 'seeds')
 
-# paths = ['weeks', 'curriculums']
+# paths = ['weeks', 'curriculums', 'users']
 paths = ['users']
 
 for path in paths:
