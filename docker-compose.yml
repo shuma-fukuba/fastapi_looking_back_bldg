@@ -3,7 +3,7 @@ version: '3.5'
 services:
   nginx:
     image: "fastapi_nginx_dev:0.1.0"
-    container_name: "fastapi_nginx_dev"
+    container_name: "shuma_fastapi_nginx_dev"
     build:
       context: ./docker/nginx
       dockerfile: Dockerfile
@@ -22,7 +22,7 @@ services:
       - .env.development
   api:
     image: "fastapi_dev:0.1.0"
-    container_name: "fastapi_dev"
+    container_name: "shuma_fastapi_bldg_dev"
     depends_on:
       - db
       - nginx
@@ -49,7 +49,7 @@ services:
       - .env.development
   db:
     image: "fastapi_db_dev:0.1.0"
-    container_name: "fastapi_db_dev"
+    container_name: "shuma_fastapi_db_dev"
     build:
       context: ./docker/db
       dockerfile: Dockerfile
