@@ -1,4 +1,5 @@
 import os
+import datetime
 from os.path import join, dirname, abspath
 import pandas as pd
 import numpy as np
@@ -6,7 +7,7 @@ from uuid import uuid4
 from sqlalchemy.orm import Session
 
 from database import SessionLocal
-from models import User, PosseYear
+from models import User, PosseYear, InputCurriculum, OutputCurriculum
 
 COLOR_GREEN = '\033[92m'
 COLOR_END = '\033[0m'
@@ -32,9 +33,10 @@ class Seeder:
 
     def seed(self):
         self.create_users()
+        self.create_associations()
         self.db.commit()
 
-    def create_users(self, commit: bool = False):
+    def create_users(self, commit: bool = True):
         self.create_posse_years()
 
         for idx, row in self.df_users.iterrows():
@@ -66,12 +68,22 @@ class Seeder:
             self.db.add(user)
 
         if commit:
-            self.db.commit()
+            try:
+                self.db.commit()
+            except Exception:
+                self.db.rollback()
 
     def create_posse_years(self, commit: bool = True):
         for idx, row in self.df_posse_years.iterrows():
             year = row.year
             entrance_date = row.entrance_date
+
+            entrance_date = datetime.datetime.strptime(
+                entrance_date, '%Y/%m/%d')
+            entrance_date = datetime.date(
+                entrance_date.year,
+                entrance_date.month,
+                entrance_date.day)
 
             obj = {
                 'year': year,
@@ -80,6 +92,33 @@ class Seeder:
 
             posse_year = PosseYear(**obj)
             self.db.add(posse_year)
+
+        if commit:
+            try:
+                self.db.commit()
+            except Exception:
+                self.db.rollback()
+
+    def create_associations(self, commit: bool = False):
+        print(f'{COLOR_GREEN} Seeding associations {COLOR_END}')
+        users = self.db.query(User).all()
+        input_curriculums = self.db.query(InputCurriculum).all()
+        output_curriculums = self.db.query(OutputCurriculum).all()
+
+        if not input_curriculums:
+            raise Exception
+
+        if not output_curriculums:
+            raise Exception
+
+        for user in users:
+            current_input = user.input_curriculums
+            current_output = user.output_curriculums
+            input_curriculums.extend(current_input)
+            output_curriculums.extend(current_output)
+
+            user.input_curriculums = [c for c in input_curriculums]
+            user.output_curriculums = [c for c in output_curriculums]
 
         if commit:
             try:

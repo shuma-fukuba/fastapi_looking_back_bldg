@@ -38,6 +38,8 @@ class InputCurriculum(CurriculumBase):
         back_populates='input_curriculums'
     )
 
+    users_input_curriculum = relationship("UsersInputCurriculums", back_populates='input_curriculums')
+
 
 class OutputCurriculum(CurriculumBase):
     __tablename__ = 'output_curriculums'
@@ -58,3 +60,5 @@ class OutputCurriculum(CurriculumBase):
 
     week = relationship('Week',
                         back_populates='output_curriculums')
+
+    users_output_curriculum = relationship('UsersOutputCurriculums', back_populates='output_curriculums')

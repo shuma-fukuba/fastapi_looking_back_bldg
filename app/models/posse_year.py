@@ -1,5 +1,5 @@
 import uuid as uid
-from sqlalchemy import Column, DateTime, Float
+from sqlalchemy import Column, Float, Date
 from sqlalchemy.orm import relationship
 from sqlalchemy_utils import UUIDType
 
@@ -17,7 +17,7 @@ class PosseYear(Base, TimestampMixin):
     year = Column(Float, nullable=False, unique=True)
 
     # 入学した日
-    entrance_date = Column(DateTime, nullable=False)
+    entrance_date = Column(Date, nullable=False)
 
     '''
     relationships

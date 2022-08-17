@@ -30,6 +30,12 @@ class User(Base, TimestampMixin):
 
     line_id = Column(String(256), nullable=True)
 
+    github_username = Column(String(256), nullable=True)
+
+    github_repository = Column(String(256), nullable=True)
+
+    github_access_token = Column(String(256), nullable=True)
+
     '''
     relationships
     '''
@@ -56,3 +62,7 @@ class User(Base, TimestampMixin):
         secondary=UsersOutputCurriculums.__tablename__,
         back_populates='users'
     )
+
+    users_input_curriculum = relationship("UsersInputCurriculums", back_populates='users')
+
+    users_output_curriculum = relationship("UsersOutputCurriculums", back_populates='users')

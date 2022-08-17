@@ -6,3 +6,5 @@ from .week import Week  # noqa: F401
 from .looking_back import LookingBack  # noqa: F401
 from .user import User  # noqa: F401
 from .posse_year import PosseYear  # noqa: F401
+from .associations.users_input_curriculums import UsersInputCurriculums  # noqa: F401
+from .associations.users_output_curriculums import UsersOutputCurriculums  # noqa: F401
