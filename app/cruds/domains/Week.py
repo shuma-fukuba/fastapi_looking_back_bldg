@@ -6,7 +6,6 @@ from models import Week
 
 from fastapi import HTTPException
 from starlette.status import HTTP_400_BAD_REQUEST
-from schemas.week import ResponseWeekSchema
 
 
 class Week:
@@ -25,7 +24,7 @@ class Week:
                          today: datetime.date = datetime.datetime.today().date()):
         this_week: int = cls.get_this_week(entrance_date=entrance_date, today=today)
         try:
-            item: ResponseWeekSchema = db.query(model).filter(
+            item = db.query(model).filter(
                 model.week == this_week).one_or_none()
         except StatementError:
             pass

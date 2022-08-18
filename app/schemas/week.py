@@ -7,5 +7,5 @@ class WeekBase(BaseModel):
     week: int
 
 
-class ResponseWeekSchema(WeekBase):
+class Week(WeekBase):
     pass

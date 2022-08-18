@@ -4,6 +4,7 @@ from cruds.looking_backs import looking_backs as crud
 from database import get_db
 
 from models import LookingBack, User
+import schemas
 
 router = APIRouter()
 
@@ -23,3 +24,13 @@ async def read_looking_backs(user_id,
                                    model=LookingBack,
                                    user_model=User,
                                    user_id=user_id)
+
+
+@router.post('/{user_id}')
+async def create_looking_back(params: schemas.LookingBackCreate,
+                              user_id,
+                              db: Session = Depends(get_db)):
+    return crud.create_looking_back(params=params,
+                                    user_id=user_id,
+                                    model=LookingBack,
+                                    db=db)
