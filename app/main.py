@@ -5,6 +5,7 @@ from fastapi import FastAPI, APIRouter
 from routers.looking_backs import router as looking_backs_router
 from routers.learning_time import router as learning_time_router
 from routers.home import router as home_router
+from routers.curriculums import router as curriculum_router
 
 router = APIRouter()
 
@@ -24,6 +25,12 @@ router.include_router(
     home_router,
     prefix='/home',
     tags=['home']
+)
+
+router.include_router(
+    curriculum_router,
+    prefix='/curriculums',
+    tags=['curriculums']
 )
 
 if env.APP_ENV == 'development':
