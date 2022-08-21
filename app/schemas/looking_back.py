@@ -13,6 +13,10 @@ class LookingBackBase(BaseModel):
     improve_point: str
 
 
+class LookingBack(LookingBackBase):
+    pass
+
+
 class LookingBackCreate(LookingBackBase):
     week: int
 
