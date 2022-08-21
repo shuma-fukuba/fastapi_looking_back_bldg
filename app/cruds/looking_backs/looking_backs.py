@@ -104,6 +104,7 @@ def update_looking_back(db: Session,
                      model=user_model,
                      user_id=user_id)
 
+    # TODO なぜかnot found
     try:
         item = db.query(model).get(looking_back_id)
     except Exception:
