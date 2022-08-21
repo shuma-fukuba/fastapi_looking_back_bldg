@@ -59,3 +59,14 @@ async def update_learning_time(user_id: str,
                                      model=LearningTime,
                                      user_model=User,
                                      learning_time=learning_time)
+
+
+@router.delete('/{user_id}/{learning_time_id}')
+async def delete_learning_time(user_id,
+                               learning_time_id,
+                               db: Session = Depends(get_db)):
+    return crud.delete_learning_time(db=db,
+                                     user_id=user_id,
+                                     learning_time_id=learning_time_id,
+                                     user_model=User,
+                                     model=LearningTime)

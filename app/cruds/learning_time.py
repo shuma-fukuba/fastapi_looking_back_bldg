@@ -139,6 +139,30 @@ def update_learning_time(db: Session,
     return learning_time_id
 
 
+def delete_learning_time(db: Session,
+                         user_id: str,
+                         learning_time_id: str,
+                         model: LearningTime,
+                         user_model: User):
+    user = _get_user(db=db, model=user_model, user_id=user_id)
+
+    try:
+        item = db.query(model).get(learning_time_id)
+    except Exception:
+        raise HTTPException(status_code=HTTP_400_BAD_REQUEST,
+                            detail='Unrecognized id format.')
+    if not item:
+        raise HTTPException(status_code=HTTP_404_NOT_FOUND,
+                            detail='Record not found.')
+    if item.user != user:
+        raise HTTPException(status_code=HTTP_404_NOT_FOUND,
+                            detail='Record not found.')
+
+    db.delete(item)
+    db.commit()
+    return True
+
+
 def _get_user(db: Session,
               model: User,
               user_id: str):
