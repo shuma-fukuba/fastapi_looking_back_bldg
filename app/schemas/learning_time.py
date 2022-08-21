@@ -17,3 +17,7 @@ class CreateLearningTimeSchema(BaseModel):
 class ResponseLearningTimeSchema(LearningTimeBase):
     user_id: UUID
     week_id: UUID
+
+
+class UpdateLearningTimeSchema(BaseModel):
+    learning_time: int

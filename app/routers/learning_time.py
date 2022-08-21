@@ -5,7 +5,7 @@ from database import get_db
 
 from models import LearningTime, User
 from cruds import learning_time as crud
-from schemas import CreateLearningTimeSchema, ResponseLearningTimeSchema
+from schemas import CreateLearningTimeSchema, ResponseLearningTimeSchema, UpdateLearningTimeSchema
 
 router = APIRouter()
 
@@ -35,3 +35,17 @@ async def create_learning_time(user_id: str,
                                      user_model=User,
                                      user_id=user_id,
                                      params=params)
+
+
+@router.put('/{user_id}/{learning_time_id}')
+async def update_learning_time(user_id: str,
+                               learning_time_id: str,
+                               params: UpdateLearningTimeSchema,
+                               db: Session = Depends(get_db)):
+    learning_time = params.learning_time
+    return crud.update_learning_time(db=db,
+                                     user_id=user_id,
+                                     learning_time_id=learning_time_id,
+                                     model=LearningTime,
+                                     user_model=User,
+                                     learning_time=learning_time)

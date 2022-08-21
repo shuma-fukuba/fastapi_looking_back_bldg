@@ -13,6 +13,7 @@ from schemas import CreateLearningTimeSchema
 logger = get_logger(__name__)
 
 
+# TODO add week num
 def read_learning_times(db: Session, user_id: str, model: LearningTime):
     try:
         user = db.query(User).get(user_id)
@@ -98,3 +99,37 @@ def create_learning_time(db: Session,
 
     db.refresh(db_item)
     return db_item
+
+
+def update_learning_time(db: Session,
+                         user_id: str,
+                         learning_time_id: str,
+                         learning_time: int,
+                         model: LearningTime,
+                         user_model: User):
+    try:
+        user = db.query(user_model).get(user_id)
+    except Exception:
+        raise HTTPException(status_code=HTTP_400_BAD_REQUEST,
+                            detail='Unrecognized user_id formant')
+    if not user:
+        raise HTTPException(status_code=HTTP_404_NOT_FOUND,
+                            detail='Record not found.')
+
+    try:
+        item = db.query(model).get(learning_time_id)
+    except Exception:  # expect invalid id given
+        raise HTTPException(status_code=HTTP_400_BAD_REQUEST,
+                            detail='Unrecognized id format.')
+    if not item:
+        raise HTTPException(status_code=HTTP_404_NOT_FOUND,
+                            detail='Record not found.')
+    if item.user != user:
+        raise HTTPException(status_code=HTTP_404_NOT_FOUND,
+                            detail='Record not found.')
+
+    if learning_time:
+        item.learning_time = learning_time
+
+    db.commit()
+    return learning_time_id
