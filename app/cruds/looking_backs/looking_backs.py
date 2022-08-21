@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy.exc import StatementError
 from fastapi import HTTPException
 from starlette.status import HTTP_400_BAD_REQUEST, HTTP_404_NOT_FOUND
-from schemas.looking_back import LookingBackCreate
+import schemas
 
 from utils.logger import get_logger
 from models import LookingBack, User, Week
@@ -16,15 +16,9 @@ def read_looking_back(db: Session,
                       model: LookingBack,
                       user_model: User,
                       user_id: str):
-    try:
-        user = db.query(user_model).filter(user_model.uuid == user_id)\
-            .one_or_none()
-    except StatementError:
-        pass
-
-    if not user:
-        raise HTTPException(status_code=HTTP_400_BAD_REQUEST,
-                            detail='Invalid user id')
+    user = _get_user(db=db,
+                     model=user_model,
+                     user_id=user_id)
 
     entrance_date = user.posse_year.entrance_date
 
@@ -47,18 +41,12 @@ def read_looking_backs(db: Session,
                        user_model: User,
                        user_id: str
                        ):
-    try:
-        user = db.query(user_model).filter(user_model.uuid == user_id)\
-            .one_or_none()
-    except StatementError:
-        pass
-
-    if not user:
-        raise HTTPException(status_code=HTTP_400_BAD_REQUEST,
-                            detail='Invalid user id')
+    user = _get_user(db=db,
+                     model=user_model,
+                     user_id=user_id)
 
     try:
-        items = db.query(model).filter(model.user_id == user_id).all()
+        items = db.query(model).filter(model.user == user).all()
     except StatementError:
         pass
 
@@ -69,7 +57,7 @@ def read_looking_backs(db: Session,
     return items
 
 
-def create_looking_back(params: LookingBackCreate,
+def create_looking_back(params: schemas.LookingBackCreate,
                         user_id,
                         model: LookingBack,
                         db: Session):
@@ -104,3 +92,52 @@ def create_looking_back(params: LookingBackCreate,
 
     db.refresh(db_item)
     return db_item
+
+
+def update_looking_back(db: Session,
+                        model: LookingBack,
+                        user_model: User,
+                        user_id: str,
+                        looking_back_id: str,
+                        params: schemas.LookingBack):
+    user = _get_user(db=db,
+                     model=user_model,
+                     user_id=user_id)
+
+    # TODO なぜかnot found
+    try:
+        item = db.query(model).get(looking_back_id)
+    except Exception:
+        raise HTTPException(status_code=HTTP_400_BAD_REQUEST,
+                            detail='Unrecognized id format.')
+    if not item:
+        raise HTTPException(status_code=HTTP_404_NOT_FOUND,
+                            detail='Record not found.')
+    if item.user != user:
+        raise HTTPException(status_code=HTTP_404_NOT_FOUND,
+                            detail='Record not found.')
+
+    item.good_point = params.good_point
+    item.why_it_worked = params.why_it_worked
+    item.should_continue = params.should_continue
+    item.bad_point = params.bad_point
+    item.why_it_didnt_worked = params.why_it_didnt_worked
+    item.should_stop = params.should_stop
+    item.improve_point = params.improve_point
+
+    db.commit()
+    return looking_back_id
+
+
+def _get_user(db: Session,
+              model: User,
+              user_id: str):
+    try:
+        user = db.query(model).get(user_id)
+    except Exception:
+        raise HTTPException(status_code=HTTP_400_BAD_REQUEST,
+                            detail='Unrecognized id format.')
+    if not user:
+        raise HTTPException(status_code=HTTP_404_NOT_FOUND,
+                            detail='Record not found.')
+    return user

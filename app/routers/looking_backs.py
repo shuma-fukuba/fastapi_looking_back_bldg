@@ -34,3 +34,16 @@ async def create_looking_back(params: schemas.LookingBackCreate,
                                     user_id=user_id,
                                     model=LookingBack,
                                     db=db)
+
+
+@router.put('/{user_id}/{looking_back_id}')
+async def update_looking_back(user_id: str,
+                              looking_back_id: str,
+                              params: schemas.LookingBack,
+                              db: Session = Depends(get_db)):
+    return crud.update_looking_back(db=db,
+                                    user_id=user_id,
+                                    looking_back_id=looking_back_id,
+                                    params=params,
+                                    user_model=User,
+                                    model=User)
