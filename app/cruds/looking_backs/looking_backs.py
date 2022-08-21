@@ -1,4 +1,5 @@
 from sqlite3 import IntegrityError
+from statistics import mode
 from sqlalchemy.orm import Session
 from sqlalchemy.exc import StatementError
 from fastapi import HTTPException
@@ -127,6 +128,30 @@ def update_looking_back(db: Session,
 
     db.commit()
     return looking_back_id
+
+
+def delete_looking_back(db: Session,
+                        user_id: str,
+                        looking_back_id: str,
+                        model: LookingBack,
+                        user_model: User):
+    user = _get_user(db=db, model=user_model, user_id=user_id)
+
+    try:
+        item = db.query(model).get(looking_back_id)
+    except Exception:
+        raise HTTPException(status_code=HTTP_400_BAD_REQUEST,
+                            detail='Unrecognized looking_back_id format.')
+    if not item:
+        raise HTTPException(status_code=HTTP_404_NOT_FOUND,
+                            detail='Record not found.')
+    if item.user != user:
+        raise HTTPException(status_code=HTTP_404_NOT_FOUND,
+                            detail='Record not found.')
+
+    db.delete(item)
+    db.commit()
+    return True
 
 
 def _get_user(db: Session,
