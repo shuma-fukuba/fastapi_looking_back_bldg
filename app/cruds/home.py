@@ -64,5 +64,3 @@ def read_home(db: Session,
         'learning_time': learning_time.learning_time,
         'looking_back': looking_back
     }
-
-    # return output_curriculums
