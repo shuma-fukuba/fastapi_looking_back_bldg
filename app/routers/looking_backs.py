@@ -47,3 +47,14 @@ async def update_looking_back(user_id: str,
                                     params=params,
                                     user_model=User,
                                     model=User)
+
+
+@router.delete('/{user_id}/{looking_back_id}')
+async def delete_looking_back(user_id: str,
+                              looking_back_id: str,
+                              db: Session = Depends(get_db)):
+    return crud.delete_looking_back(db=db,
+                                    user_id=user_id,
+                                    looking_back_id=looking_back_id,
+                                    model=LookingBack,
+                                    user_model=User)
