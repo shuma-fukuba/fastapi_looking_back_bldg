@@ -6,7 +6,7 @@ from fastapi import HTTPException
 from models import LearningTime, LookingBack, User, Week, InputCurriculum, OutputCurriculum, UsersInputCurriculums
 from models.associations.users_output_curriculums import UsersOutputCurriculums
 from utils.logger import get_logger
-from starlette.status import HTTP_400_BAD_REQUEST
+from starlette.status import HTTP_400_BAD_REQUEST, HTTP_404_NOT_FOUND
 from .domains.Week import Week as WeekDomain
 
 
@@ -15,13 +15,7 @@ logger = get_logger(__name__)
 
 def read_home(db: Session,
               user_id: str):
-    try:
-        user: User = db.query(User).get(user_id)
-    except StatementError:
-        pass
-    if not user:
-        raise HTTPException(status_code=HTTP_400_BAD_REQUEST,
-                            detail='Invalid user id given.')
+    user = _get_user(db=db, model=User, user_id=user_id)
     week = WeekDomain.get_this_week(db=db,
                                     model=Week,
                                     entrance_date=user.posse_year.entrance_date)
@@ -64,3 +58,17 @@ def read_home(db: Session,
         'learning_time': learning_time.learning_time,
         'looking_back': looking_back
     }
+
+
+def _get_user(db: Session,
+              model: User,
+              user_id: str):
+    try:
+        user = db.query(model).get(user_id)
+    except Exception:
+        raise HTTPException(status_code=HTTP_400_BAD_REQUEST,
+                            detail='Unrecognized id format.')
+    if not user:
+        raise HTTPException(status_code=HTTP_404_NOT_FOUND,
+                            detail='Record not found.')
+    return user
