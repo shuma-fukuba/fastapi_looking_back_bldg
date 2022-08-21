@@ -1,5 +1,4 @@
 from sqlite3 import IntegrityError
-from statistics import mode
 from sqlalchemy.orm import Session
 from sqlalchemy.exc import StatementError
 from fastapi import HTTPException
