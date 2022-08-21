@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy.exc import StatementError
 from fastapi import HTTPException
 from starlette.status import HTTP_400_BAD_REQUEST, HTTP_404_NOT_FOUND
-from schemas.looking_back import LookingBackCreate
+import schemas
 
 from utils.logger import get_logger
 from models import LookingBack, User, Week
@@ -57,7 +57,7 @@ def read_looking_backs(db: Session,
     return items
 
 
-def create_looking_back(params: LookingBackCreate,
+def create_looking_back(params: schemas.LookingBackCreate,
                         user_id,
                         model: LookingBack,
                         db: Session):
@@ -99,7 +99,7 @@ def update_looking_back(db: Session,
                         user_model: User,
                         user_id: str,
                         looking_back_id: str,
-                        params):
+                        params: schemas.LookingBack):
     user = _get_user(db=db,
                      model=user_model,
                      user_id=user_id)
@@ -115,7 +115,15 @@ def update_looking_back(db: Session,
     if item.user != user:
         raise HTTPException(status_code=HTTP_404_NOT_FOUND,
                             detail='Record not found.')
-    # TODO item update
+
+    item.good_point = params.good_point
+    item.why_it_worked = params.why_it_worked
+    item.should_continue = params.should_continue
+    item.bad_point = params.bad_point
+    item.why_it_didnt_worked = params.why_it_didnt_worked
+    item.should_stop = params.should_stop
+    item.improve_point = params.improve_point
+
     db.commit()
     return looking_back_id
 
