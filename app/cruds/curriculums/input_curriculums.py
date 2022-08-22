@@ -53,6 +53,27 @@ def get_input_curriculum(db: Session,
     return item
 
 
+def udpate_curriculum_done(db: Session,
+                           user_id: str,
+                           curriculum_id: str,
+                           done: bool,
+                           model: UsersInputCurriculums):
+    try:
+        item: UsersInputCurriculums = db.query(model).filter(and_(
+            model.user_id == user_id,
+            model.input_curriculum_id == curriculum_id
+        )).one_or_none()
+    except Exception:
+        raise HTTPException(status_code=HTTP_400_BAD_REQUEST,
+                            detail='Unrecognized id format.')
+    if not item:
+        raise HTTPException(status_code=HTTP_404_NOT_FOUND,
+                            detail='Record not found.')
+    item.done = done
+    db.commit()
+    return (user_id, curriculum_id)
+
+
 def _get_user(db: Session,
               model: User,
               user_id: str):

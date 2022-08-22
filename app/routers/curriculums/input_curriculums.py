@@ -4,6 +4,7 @@ from database import get_db
 
 from models import InputCurriculum, User, UsersInputCurriculums
 from cruds.curriculums import input_curriculums as crud
+import schemas
 
 
 router = APIRouter()
@@ -28,3 +29,16 @@ async def get_input_curriculum(user_id,
                                      model=InputCurriculum,
                                      association_model=UsersInputCurriculums,
                                      user_model=User)
+
+
+@router.put('/{user_id}/{curriculum_id}')
+async def udpate_curriculum_done(user_id,
+                                 curriculum_id,
+                                 params: schemas.UpdateCurriculumSchema,
+                                 db: Session = Depends(get_db)):
+    done = params.done
+    return crud.udpate_curriculum_done(db=db,
+                                       user_id=user_id,
+                                       curriculum_id=curriculum_id,
+                                       done=done,
+                                       model=UsersInputCurriculums)
