@@ -56,7 +56,8 @@ def read_home(db: Session,
         'input_curriculums': input_curriculums,
         'output_curriculums': output_curriculums,
         'learning_time': learning_time.learning_time,
-        'looking_back': looking_back
+        'looking_back': looking_back,
+        'week': week.week
     }
 
 
