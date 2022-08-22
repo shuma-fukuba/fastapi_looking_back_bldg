@@ -8,7 +8,7 @@ router = APIRouter()
 
 router.include_router(
     input_router,
-    prefix='/input'
+    prefix='/inputs'
 )
 
 router.include_router(
