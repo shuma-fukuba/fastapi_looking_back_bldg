@@ -6,6 +6,7 @@ from routers.looking_backs import router as looking_backs_router
 from routers.learning_time import router as learning_time_router
 from routers.home import router as home_router
 from routers.curriculums import router as curriculum_router
+from routers.user import router as user_router
 
 router = APIRouter()
 
@@ -31,6 +32,12 @@ router.include_router(
     curriculum_router,
     prefix='/curriculums',
     tags=['curriculums']
+)
+
+router.include_router(
+    user_router,
+    prefix='/users',
+    tags=['users']
 )
 
 if env.APP_ENV == 'development':
