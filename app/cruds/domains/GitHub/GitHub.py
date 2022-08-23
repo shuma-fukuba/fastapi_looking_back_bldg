@@ -1,4 +1,4 @@
-from cruds.http.Request import Request
+from cruds.domains.GitHub.Request import Request
 
 
 class GitHub:
