@@ -1,5 +1,7 @@
 from pydantic import BaseModel
 from uuid import UUID
+from .week import WeekBase
+from .user import UserBase
 
 
 class CurriculumBase(BaseModel):
@@ -7,9 +9,17 @@ class CurriculumBase(BaseModel):
     curriculum_name: str
 
 
-class ResponseCurriculumSchema(CurriculumBase):
-    is_done: bool = False
+class Curriculum(CurriculumBase):
+    week: WeekBase = None
+    user: UserBase = None
+
+    class Config:
+        orm_mode = True
 
 
 class UpdateCurriculumSchema(BaseModel):
     done: bool = False
+
+
+class ResponseCurriculumSchema(CurriculumBase):
+    pass

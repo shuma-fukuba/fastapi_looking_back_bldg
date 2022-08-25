@@ -1,5 +1,7 @@
-from .looking_back import LookingBackCreate, ResponseLookingBack, LookingBack  # noqa: F401
-from .week import Week  # noqa: F401
-from .learning_time import CreateLearningTimeSchema, ResponseLearningTimeSchema, UpdateLearningTimeSchema  # noqa: F401
-from .curriculum import ResponseCurriculumSchema, UpdateCurriculumSchema  # noqa: F401
+from .looking_back import LookingBackBase, LookingBackCreate, LookingBack  # noqa: F401
+from .week import Week, WeekBase  # noqa: F401
+from .learning_time import CreateLearningTimeSchema, ResponseLearningTimeSchema, UpdateLearningTimeSchema, LearningTime  # noqa: F401
+from .curriculum import ResponseCurriculumSchema, UpdateCurriculumSchema, Curriculum, CurriculumBase  # noqa: F401
 from .home import ResponseHomeSchema  # noqa: F401
+from .token import Token, TokenData  # noqa: F401
+from .user import User, UserBase  # noqa: F401

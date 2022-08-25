@@ -1,12 +1,20 @@
 from pydantic import BaseModel
 from uuid import UUID
+# from .week import WeekBase
+# from .user import UserBase
 
 
 class LearningTimeBase(BaseModel):
     uuid: UUID
     learning_time: int
-    created_at: str
-    updated_at: str
+
+
+class LearningTime(LearningTimeBase):
+    # week: WeekBase = None
+    # user: UserBase = None
+
+    class Config:
+        orm_mode = True
 
 
 class CreateLearningTimeSchema(BaseModel):
