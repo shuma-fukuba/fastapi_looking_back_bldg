@@ -1,9 +1,12 @@
+from uuid import UUID
 from pydantic import BaseModel
 
-from .week import Week
+from .week import WeekBase
+from .user import UserBase
 
 
 class LookingBackBase(BaseModel):
+    uuid: UUID
     good_point: str
     why_it_worked: str
     should_continue: str
@@ -14,16 +17,12 @@ class LookingBackBase(BaseModel):
 
 
 class LookingBack(LookingBackBase):
-    pass
+    week: WeekBase
+    user: UserBase
+
+    class Config:
+        orm_mode = True
 
 
 class LookingBackCreate(LookingBackBase):
     week: int
-
-
-class ResponseLookingBack(LookingBackBase):
-    uuid: str
-    user_id: str
-    week_id: str
-    week: Week
-    # user: User

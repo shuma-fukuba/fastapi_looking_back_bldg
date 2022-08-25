@@ -6,6 +6,10 @@ class WeekBase(BaseModel):
     uuid: UUID
     week: int
 
+    class Config:
+        orm_mode = True
+
 
 class Week(WeekBase):
-    pass
+    class Config:
+        orm_mode = True

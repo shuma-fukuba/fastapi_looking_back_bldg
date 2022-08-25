@@ -5,6 +5,7 @@ import pandas as pd
 import numpy as np
 from uuid import uuid4
 from sqlalchemy.orm import Session
+from passlib.context import CryptContext
 
 from database import SessionLocal
 from models import User, PosseYear, InputCurriculum, OutputCurriculum
@@ -31,6 +32,8 @@ class Seeder:
         self.df_users = self.__convert_nan_None(self.df_users)
         self.df_posse_years = self.__convert_nan_None(self.df_posse_years)
 
+        self.pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+
     def seed(self):
         self.create_users()
         self.create_associations()
@@ -43,8 +46,8 @@ class Seeder:
             print(f'{COLOR_GREEN}{idx}/{len(self.df_users)} {COLOR_END}')
             uuid = uuid4()
             username = row.username
-            # TODO cognito_user_id must be in cognito userpool
-            cognito_user_id = uuid4()
+            email = row.email
+            hashed_password = self.pwd_context.hash(row.password)
             university = row.university
             university_entrance_year = row.university_entrance_year
             expected_university_graduation_year = row.expected_university_graduation_year
@@ -56,7 +59,8 @@ class Seeder:
 
             obj = {
                 'uuid': uuid,
-                'cognito_user_id': cognito_user_id,
+                'email': email,
+                'hashed_password': hashed_password,
                 'username': username,
                 'posse_year_id': posse_year_id,
                 'university': university,
