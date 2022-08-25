@@ -22,6 +22,7 @@ def read_learning_times(db: Session, user_id: str, model: LearningTime):
         learning_times = db.query(model).filter(model.user == user).all()
     except StatementError:
         pass
+    # TODO validation
 
     return learning_times
 

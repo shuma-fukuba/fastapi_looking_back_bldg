@@ -20,10 +20,12 @@ class User(Base, TimestampMixin):
     uuid = Column(UUIDType(binary=False),
                   primary_key=True, default=uid.uuid4)
 
-    cognito_user_id = Column(UUIDType(binary=False),
-                             unique=True)
+    username = Column(String(256), nullable=False)
 
-    username = Column(String(256), unique=True, nullable=False)
+    email = Column(String(256), unique=True, nullable=False)
+
+    hashed_password = Column(String(256), nullable=False)
+
     university = Column(String(256), nullable=True)
     university_entrance_year = Column(Integer, nullable=True)
     expected_university_graduation_year = Column(Integer, nullable=True)
