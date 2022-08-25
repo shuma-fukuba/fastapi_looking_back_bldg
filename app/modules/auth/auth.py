@@ -9,9 +9,8 @@ from passlib.context import CryptContext
 from sqlalchemy.orm import Session
 from models import User
 from schemas import TokenData
+from env import AUTH_SECRET_KEY
 
-
-SECRET_KEY = "13774feb78b891056fafbb00676f2ee6aa480797fb3bb7dbeb77e5004fdb04aa"
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 60
 
@@ -63,7 +62,7 @@ def create_access_token(
         expire = datetime.utcnow() + timedelta(minutes=15)
 
     to_encode.update({'exp': expire})
-    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+    encoded_jwt = jwt.encode(to_encode, AUTH_SECRET_KEY, algorithm=ALGORITHM)
     return encoded_jwt
 
 
@@ -75,7 +74,7 @@ async def get_current_user(db: Session, token: str = Depends(oauth2_scheme)):
     )
 
     try:
-        paylod = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        paylod = jwt.decode(token, AUTH_SECRET_KEY, algorithms=[ALGORITHM])
         email: str = paylod.get('sub')
         if email is None:
             raise credentials_exception

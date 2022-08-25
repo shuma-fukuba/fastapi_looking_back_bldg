@@ -10,3 +10,4 @@ DB_HOST = os.environ.get('MYSQL_HOST')
 DB_NAME = os.environ.get('MYSQL_DATABASE')
 
 GITHUB_ACCESS_TOKEN = os.environ.get('GITHUB_ACCESS_TOKEN')
+AUTH_SECRET_KEY = os.environ.get('AUTH_SECRET_KEY')
