@@ -5,10 +5,10 @@ import pandas as pd
 import numpy as np
 from uuid import uuid4
 from sqlalchemy.orm import Session
-from passlib.context import CryptContext
 
 from database import SessionLocal
 from models import User, PosseYear, InputCurriculum, OutputCurriculum
+from modules.auth.auth import pwd_context
 
 COLOR_GREEN = '\033[92m'
 COLOR_END = '\033[0m'
@@ -32,7 +32,7 @@ class Seeder:
         self.df_users = self.__convert_nan_None(self.df_users)
         self.df_posse_years = self.__convert_nan_None(self.df_posse_years)
 
-        self.pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+        self.pwd_context = pwd_context
 
     def seed(self):
         self.create_users()
