@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 from uuid import UUID
-from .week import WeekBase
-from .user import UserBase
+# from .week import WeekBase
+# from .user import UserBase
 
 
 class CurriculumBase(BaseModel):
@@ -10,9 +10,6 @@ class CurriculumBase(BaseModel):
 
 
 class Curriculum(CurriculumBase):
-    week: WeekBase = None
-    user: UserBase = None
-
     class Config:
         orm_mode = True
 

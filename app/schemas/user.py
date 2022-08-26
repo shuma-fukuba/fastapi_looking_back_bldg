@@ -24,6 +24,7 @@ class UserBase(BaseModel):
 
 
 class User(UserBase):
+    disabled: bool = False
     posse_year: PosseYear
 
     class Config:

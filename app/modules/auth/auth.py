@@ -7,6 +7,7 @@ from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from jose import JWTError, jwt
 from passlib.context import CryptContext
 from sqlalchemy.orm import Session
+from database import get_db
 from models import User
 from schemas import TokenData
 from env import AUTH_SECRET_KEY
@@ -17,7 +18,7 @@ ACCESS_TOKEN_EXPIRE_MINUTES = 60
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl='token')
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl='v1/token')
 
 
 def veirfy_password(plain_password, hashed_password):
@@ -48,7 +49,8 @@ def authenticate_user(db: Session,
                       model: User):
     user = get_user(db=db, email=email, model=model)
     if not veirfy_password(password, user.hashed_password):
-        return False
+        raise HTTPException(status_code=HTTP_400_BAD_REQUEST,
+                            detail='Password is incorrect.')
     return user
 
 
@@ -57,7 +59,7 @@ def create_access_token(
     to_encode = data.copy()
 
     if expires_delta:
-        expire = datetime().utcnow() + expires_delta
+        expire = datetime.utcnow() + expires_delta
     else:
         expire = datetime.utcnow() + timedelta(minutes=15)
 
@@ -66,7 +68,8 @@ def create_access_token(
     return encoded_jwt
 
 
-async def get_current_user(db: Session, token: str = Depends(oauth2_scheme)):
+def get_current_user(db: Session = Depends(get_db),
+                     token: str = Depends(oauth2_scheme)):
     credentials_exception = HTTPException(
         status_code=HTTP_401_UNAUTHORIZED,
         detail='Cloud not validate credentials.',
@@ -82,7 +85,7 @@ async def get_current_user(db: Session, token: str = Depends(oauth2_scheme)):
     except JWTError:
         raise credentials_exception
 
-    user = get_user(db=db, email=token_data.email)
+    user = get_user(db=db, email=token_data.email, model=User)
 
     if user is None:
         raise credentials_exception
@@ -90,18 +93,18 @@ async def get_current_user(db: Session, token: str = Depends(oauth2_scheme)):
     return user
 
 
-async def get_current_active_user(current_user: User = Depends(get_current_user)):
-    if current_user.disabled:
-        raise HTTPException(status_code=HTTP_400_BAD_REQUEST,
-                            detail='Inactive user.')
+def get_current_active_user(current_user: User = Depends(get_current_user)):
+    # if current_user.disabled:
+    #     raise HTTPException(status_code=HTTP_400_BAD_REQUEST,
+    #                         detail='Inactive user.')
     return current_user
 
 
-async def login_for_access_token(db: Session,
-                                 model: User,
-                                 form_data: OAuth2PasswordRequestForm):
+def login_for_access_token(db: Session,
+                           model: User,
+                           form_data: OAuth2PasswordRequestForm):
     user = authenticate_user(db=db,
-                             email=form_data.email,
+                             email=form_data.username,
                              password=form_data.password,
                              model=model)
     if not user:

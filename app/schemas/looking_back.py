@@ -24,5 +24,17 @@ class LookingBack(LookingBackBase):
         orm_mode = True
 
 
-class LookingBackCreate(LookingBackBase):
+class HomeLookingBack(LookingBackBase):
+    class Config:
+        orm_mode = True
+
+
+class LookingBackCreate(BaseModel):
+    good_point: str
+    why_it_worked: str
+    should_continue: str
+    bad_point: str
+    why_it_didnt_worked: str
+    should_stop: str
+    improve_point: str
     week: int
