@@ -49,6 +49,6 @@ api$ alembic upgrade head
 # Seeding
 exec below in the api container
 ```
-$api cd ../db
-$api python seed.py
+api$ cd ../db
+api$ python seed.py
 ```

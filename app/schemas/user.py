@@ -14,7 +14,6 @@ class UserBase(BaseModel):
     university_entrance_year: int
     expected_university_graduation_year: int
     line_id: Optional[str]
-    cognito_user_id: Optional[str]
     github_username: Optional[str]
     github_repository: Optional[str]
     github_access_token: Optional[str]
@@ -24,7 +23,6 @@ class UserBase(BaseModel):
 
 
 class User(UserBase):
-    disabled: bool = False
     posse_year: PosseYear
 
     class Config:
