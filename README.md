@@ -52,3 +52,5 @@ exec below in the api container
 $api cd ../db
 $api python seed.py
 ```
+
+from ynu
