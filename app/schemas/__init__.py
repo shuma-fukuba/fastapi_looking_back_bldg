@@ -5,3 +5,4 @@ from .curriculum import ResponseCurriculumSchema, UpdateCurriculumSchema, Curric
 from .home import ResponseHomeSchema  # noqa: F401
 from .token import Token, TokenData  # noqa: F401
 from .user import User, UserBase  # noqa: F401
+from .auth import CreateTokenSchema  # noqa: F401

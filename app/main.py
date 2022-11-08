@@ -2,6 +2,7 @@ import env
 from starlette.middleware.base import BaseHTTPMiddleware
 from middlewares import http_log
 from fastapi import FastAPI, APIRouter
+from fastapi.middleware.cors import CORSMiddleware
 from routers.looking_backs import router as looking_backs_router
 from routers.learning_time import router as learning_time_router
 from routers.home import router as home_router
@@ -63,3 +64,16 @@ app.include_router(
 )
 
 app.add_middleware(BaseHTTPMiddleware, dispatch=http_log)
+
+origins = [
+    env.REACT_HOST,
+    f'http;//{env.REACT_HOST}'
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)

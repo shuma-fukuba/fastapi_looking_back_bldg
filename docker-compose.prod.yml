@@ -1,0 +1,10 @@
+version: '3.5'
+
+services:
+  bldg_api:
+    image: 'shuma_fastapi_bldg_prod'
+
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+  

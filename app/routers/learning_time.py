@@ -22,7 +22,8 @@ async def read_learning_times(user_id,
 
 @router.get('/{user_id}/this_week', response_model=schemas.LearningTime)
 async def read_learning_time_in_this_week(user_id,
-                                          current_user=Depends(get_current_active_user),
+                                          current_user=Depends(
+                                              get_current_active_user),
                                           db: Session = Depends(get_db)):
     return crud.read_learning_time_in_this_week(db=db,
                                                 model=LearningTime,
