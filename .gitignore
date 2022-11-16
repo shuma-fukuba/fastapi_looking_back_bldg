@@ -13,3 +13,5 @@ htdocs/static/*
 !htdocs/static/.keep
 
 tmp/*
+
+.devcontainer
