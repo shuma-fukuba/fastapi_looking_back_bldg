@@ -67,7 +67,7 @@ app.add_middleware(BaseHTTPMiddleware, dispatch=http_log)
 
 origins = [
     env.REACT_HOST,
-    f'http;//{env.REACT_HOST}'
+    f'http://{env.REACT_HOST}'
 ]
 
 app.add_middleware(
