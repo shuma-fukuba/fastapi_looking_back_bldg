@@ -4,5 +4,5 @@ from .learning_time import CreateLearningTimeSchema, HomeLearningTime, ResponseL
 from .curriculum import ResponseCurriculumSchema, UpdateCurriculumSchema, Curriculum, CurriculumBase  # noqa: F401
 from .home import ResponseHomeSchema  # noqa: F401
 from .token import Token, TokenData  # noqa: F401
-from .user import User, UserBase  # noqa: F401
+from .user import User, ResponseUserSchema  # noqa: F401
 from .auth import CreateTokenSchema  # noqa: F401

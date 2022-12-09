@@ -1,4 +1,4 @@
-from datetime import date
+from datetime import date, datetime
 from uuid import UUID
 from pydantic import BaseModel
 
@@ -10,5 +10,7 @@ class PosseYearBase(BaseModel):
 
 
 class PosseYear(PosseYearBase):
+    updated_at: datetime
+
     class Config:
         orm_mode = True

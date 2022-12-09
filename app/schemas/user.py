@@ -1,3 +1,4 @@
+from datetime import datetime
 from typing import Optional
 from pydantic import BaseModel
 from uuid import UUID
@@ -14,12 +15,15 @@ class UserBase(BaseModel):
     github_username: Optional[str]
     github_repository: Optional[str]
 
+
+class User(UserBase):
     class Config:
         orm_mode = True
 
 
-class User(UserBase):
+class ResponseUserSchema(UserBase):
     posse_year: PosseYear
+    updated_at: datetime
 
     class Config:
         orm_mode = True
